@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lavanderias em Poços de Caldas</title>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#080E32;--surf:#0F1742;--surf2:#18225A;
+  --line:#232E6B;--ink:#EEF1FB;--ink2:#B4BBD9;--ink3:#8189B0;
+  --won:oklch(78% .12 150);--lost:oklch(72% .13 30);--amber:oklch(82% .13 80);--blue:#4D85FF;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Figtree",sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:880px;margin:0 auto;padding:56px 16px 96px}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);font-weight:700}
+h1{font-family:"Figtree",sans-serif;font-weight:800;font-size:clamp(34px,6.5vw,56px);letter-spacing:-.03em;line-height:1;margin:14px 0 14px}
+h2{font-family:"Figtree",sans-serif;font-weight:600;font-size:24px;letter-spacing:-.015em;margin:64px 0 6px}
+.lede{color:var(--ink2);font-size:18px;max-width:60ch;margin:0}
+.meta{color:var(--ink3);font-size:13.5px;margin-top:18px}
+p{max-width:66ch}
+.sub{color:var(--ink2);margin:0 0 22px}
+
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:40px}
+.nums div{background:var(--surf);padding:22px 20px}
+.nums b{display:block;font-family:"Figtree",sans-serif;font-size:44px;font-weight:800;line-height:1;letter-spacing:-.03em}
+.nums span{display:block;color:var(--ink2);font-size:13.5px;margin-top:8px;max-width:20ch}
+.nums .w b{color:var(--won)} .nums .l b{color:var(--lost)} .nums .a b{color:var(--amber)}
+
+.funnel{display:flex;flex-direction:column;gap:10px}
+.step{display:grid;grid-template-columns:190px 1fr 44px;align-items:center;gap:14px}
+.step .t{font-size:14.5px;color:var(--ink2)}
+.step .bar{height:26px;border-radius:6px;background:var(--surf2);overflow:hidden}
+.step .bar i{display:block;height:100%;background:var(--blue);border-radius:6px}
+.step .n{font-weight:700;text-align:right;font-variant-numeric:tabular-nums}
+.step.win .bar i{background:var(--won)}
+.step.neg .bar i{background:var(--won);opacity:.55}
+
+.reasons{border-top:1px solid var(--line)}
+.r{display:grid;grid-template-columns:34px 1fr;gap:6px 18px;padding:20px 0;border-bottom:1px solid var(--line)}
+.r .c{font-family:"Figtree",sans-serif;font-size:30px;font-weight:800;line-height:1;color:var(--lost);font-variant-numeric:tabular-nums}
+.r h3{margin:0;font-size:17px;font-weight:700}
+.r h3 small{color:var(--ink3);font-weight:500;font-size:13.5px;margin-left:8px}
+.r p{grid-column:2;margin:4px 0 0;color:var(--ink2);font-size:15px}
+.r .who{grid-column:2;color:var(--ink3);font-size:13.5px;margin-top:6px}
+.meter{grid-column:2;height:6px;background:var(--surf2);border-radius:3px;overflow:hidden;margin-top:4px}
+.meter i{display:block;height:100%;background:var(--lost)}
+
+blockquote{margin:22px 0;padding:20px 22px;background:var(--surf);border-radius:12px;color:var(--ink);font-size:16.5px;line-height:1.55}
+blockquote cite{display:block;margin-top:10px;color:var(--ink3);font-style:normal;font-size:13.5px}
+
+.won{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.won div{background:var(--surf);border-radius:12px;padding:20px}
+.won h3{margin:0 0 4px;font-size:17px;color:var(--won)}
+.won p{margin:0;color:var(--ink2);font-size:14.5px}
+
+.concl{background:var(--surf);border-radius:16px;padding:28px 26px;margin-top:18px}
+.concl p{margin:0 0 14px;color:var(--ink)}
+.concl p:last-child{margin:0}
+.concl ol{margin:6px 0 14px;padding-left:20px;color:var(--ink2)}
+.concl li{margin:8px 0}
+.concl li b{color:var(--ink)}
+
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:14px}
+th{text-align:left;color:var(--ink3);font-weight:500;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:12px 14px;background:var(--surf)}
+td{padding:12px 14px;border-top:1px solid var(--line);vertical-align:top;color:var(--ink2)}
+td:first-child{color:var(--ink);font-weight:500}
+.tag{display:inline-block;padding:2px 10px;border-radius:999px;font-size:12px;font-weight:700;white-space:nowrap}
+.tag.g{background:oklch(78% .12 150 / .16);color:var(--won)}
+.tag.a{background:oklch(80% .13 80 / .16);color:var(--amber)}
+.tag.p{background:oklch(70% .13 35 / .16);color:var(--lost)}
+.flag{color:var(--amber)}
+.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.dim{color:var(--ink3)}
+footer{margin-top:56px;color:var(--ink3);font-size:13px}
+
+@media (max-width:640px){
+  .nums{grid-template-columns:1fr 1fr}
+  .step{grid-template-columns:1fr 40px}
+  .step .t{grid-column:1/-1}
+  .won{grid-template-columns:1fr}
+}
+
+.tl{border-left:2px solid var(--line);margin:8px 0 0 6px;padding-left:22px}
+.tl div{position:relative;padding:0 0 22px}
+.tl div:before{content:"";position:absolute;left:-29px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--blue)}
+.tl div.g:before{background:var(--won)} .tl div.p:before{background:var(--lost)}
+.tl b{display:block;font-size:13px;color:var(--ink3);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+.tl p{margin:2px 0 0;color:var(--ink2);font-size:15px}
+.tl p strong{color:var(--ink)}
+.badge{display:inline-block;margin-top:22px;padding:6px 14px;border-radius:999px;background:oklch(78% .12 150 / .14);color:var(--won);font-size:13px;font-weight:700}
+</style></head><body><main>
+
+<span class="eyebrow">Prospecção de Fornecedores · Lavanderias · MG</span>
+<h1>Prospecção Lavanderias Poços de Caldas</h1>
+<p class="lede">Poços de Caldas teve 79 lavanderias no funil em duas rodadas: 30 em setembro, à mão, e 49 em outubro, com o agente. Na rodada do agente, 43 telefones receberam mensagem entre 16/10 e 21/10 e 12 responderam. Saíram 4 ganhas e 75 perdidas, 29 delas encerradas pelo agente em 21/10. O contato inválido foi o maior motivo de perda: 30 dos 75 perdidos (40%), a maioria na 1ª rodada.</p>
+<p class="meta">Fonte: Pipedrive, funil 60 "Prospecção Fornecedores", com o histórico de etapas e as anotações de cada card · 30 cards criados em 11/09 (1ª rodada) e 49 em 14/10 (2ª rodada, base da Receita CNAE 9601) · mensagens do agente entre 16/10 e 21/10 · negociação feita pela Wânia · atualizado em 22/10/2026</p>
+<div class="nums">
+  <div><b>79</b><span>lavanderias no funil (61 telefones diferentes)</span></div>
+  <div class="a"><b>12</b><span>responderam na rodada do agente (49 cards)</span></div>
+  <div class="w"><b>4</b><span>ganhas</span></div>
+  <div class="l"><b>75</b><span>perdidas, 29 delas encerradas pelo agente</span></div>
+</div>
+<h2>Como o agente trabalhou</h2>
+<p class="sub">O agente manda as mensagens e move os cards sozinho. Quem responde, a Wânia passa para "Em negociação" e o agente não mexe mais no card. Horários de Brasília.</p>
+<div class="tl">
+  <div><b>11/09 · 1ª rodada, à mão</b><p>30 lavanderias viram card em 11/09. O contato foi feito pelo time e os resultados foram marcados à mão, entre 11/09 e 07/10. Nenhuma foi ganha.</p></div>
+  <div><b>14/10 · rodada do agente</b><p>49 lavanderias viram card no Backlog, a partir da base da Receita.</p></div>
+  <div><b>16/10 · 1º contato</b><p>O agente envia o <strong>1º contato</strong> (42 em 16/10, 1 em 19/10). Os cards que ainda não tinham telefone ou estavam com conversa aberta na SIA deram erro e ficaram para depois.</p></div>
+  <div><b>19/10 · 2º contato</b><p>Os cards sem resposta vão para a etapa 2º Contato e recebem o <strong>2º contato</strong> (37 em 19/10, 3 em 20/10).</p></div>
+  <div><b>20/10 · último contato</b><p>Os que continuavam sem resposta recebem o <strong>último contato</strong> (32 em 20/10, 1 em 21/10).</p></div>
+  <div class="g"><b>Ganhos</b><p>Entraram na rodada do agente: CNPJ 56.481.561 lava &amp; Passa (19/10 às 17h57), CNPJ 53.811.574 Lavanderia da Marli (20/10 às 09h46), Merli (20/10 às 09h48) e Eco Higienização (20/10 às 15h17).</p></div>
+  <div class="p"><b>21/10 · encerramento</b><p>O agente marca <strong>29 cards sem retorno como Perdidos</strong> ("Sem Retorno") e move para a etapa de Perda (29 em 21/10).</p></div>
+</div>
+<h2>Lead time da prospecção com IA</h2>
+<p class="sub">Da criação dos cards da rodada do agente até o último card ter resultado. Dias corridos, horários de Brasília.</p>
+<div class="nums">
+  <div class="a"><b>7d 3h</b><span>LT da cidade: de 14/10 às 15h01 a 21/10 às 17h46</span></div>
+  <div><b>5,9 d</b><span>LT médio por card, do card criado ao resultado</span></div>
+  <div class="w"><b>3d 7h</b><span>do 1º contato do agente ao 1º ganho</span></div>
+  <div><b>1h34</b><span>mediana da negociação da Wânia, da entrada em negociação ao resultado</span></div>
+</div>
+<div class="tbl"><table style="min-width:0">
+<thead><tr><th>Etapa</th><th class="num">Tempo</th><th>Observação</th></tr></thead>
+<tbody>
+<tr><td>Card criado → 1º contato enviado</td><td class="num">1d 20h</td><td>Cards criados em 14/10 às 15h01 e primeiro 1º contato em 16/10 às 11h00. Os cards ficaram parados de quarta a sexta.</td></tr>
+<tr><td>1º contato → 2º contato</td><td class="num">3d 0h</td><td>16/10 às 11h00 → 19/10 às 11h00</td></tr>
+<tr><td>2º contato → último contato</td><td class="num">1d 1h</td><td>19/10 às 11h00 → 20/10 às 12h00</td></tr>
+<tr><td>Último contato → Perda</td><td class="num">1d 1h</td><td>O agente encerrou os 29 sem retorno em 21/10</td></tr>
+<tr><td>Card criado → ganho</td><td class="num">5,1 d, 5,8 d, 5,8 d e 6,0 d</td><td>CNPJ 56.481.561 lava &amp; Passa, CNPJ 53.811.574 Lavanderia da Marli, Merli e Eco Higienização</td></tr>
+<tr><td>Em negociação → resultado</td><td class="num">1h34 (mediana)</td><td>8 cards passaram por negociação; o mais longo levou 17h06 e o mais curto 33 min.</td></tr>
+<tr><td>Card sem retorno → Perda</td><td class="num">6,9 d</td><td>Os 29 cards encerrados pelo agente</td></tr>
+</tbody></table></div>
+<h2>Do contato ao cadastro</h2>
+<p class="sub">Rodada do agente, contada por telefone. 47 telefones diferentes em 49 cards; 43 receberam pelo menos uma mensagem do agente.</p>
+<div class="funnel">
+  <div class="step"><span class="t">Recebeu mensagem</span><span class="bar"><i style="width:100%"></i></span><span class="n">43</span></div>
+  <div class="step"><span class="t">Respondeu</span><span class="bar"><i style="width:27.9%"></i></span><span class="n">12</span></div>
+  <div class="step neg"><span class="t">Foi para negociação</span><span class="bar"><i style="width:18.6%"></i></span><span class="n">8</span></div>
+  <div class="step win"><span class="t">Ganho</span><span class="bar"><i style="width:9.3%"></i></span><span class="n">4</span></div>
+</div>
+<p class="sub" style="margin-top:32px">Qual mensagem trouxe a resposta:</p>
+<div class="tbl"><table style="min-width:0">
+<thead><tr><th>Mensagem do agente</th><th class="num">Enviada para</th><th class="num">Responderam depois dela</th></tr></thead>
+<tbody>
+<tr><td>1º contato · 16/10 a 19/10</td><td class="num">43</td><td class="num">2</td></tr>
+<tr><td>2º contato · 19/10 a 20/10</td><td class="num">40</td><td class="num">6</td></tr>
+<tr><td>Último contato · 20/10 a 21/10</td><td class="num">33</td><td class="num">4</td></tr>
+</tbody></table></div>
+<h2>Por que perdemos</h2>
+<p class="sub">75 cards perdidos, por motivo marcado no Pipedrive. As explicações vêm das anotações da Wânia em cada card.</p>
+<div class="reasons">
+  <div class="r"><span class="c">35</span><h3>Sem retorno<small>46,7%</small></h3>
+    <div class="meter"><i style="width:46.7%"></i></div>
+    <p>29 passaram pela cadência do agente (29 com o último contato enviado), não responderam e foram encerradas por ele. Outras 6 são da 1ª rodada, feita à mão.</p>
+    <span class="who">29 pelo agente · Brasperola · CLM · Lavaki · Lurdes · Poços de Caldas · Uhull</span></div>
+  <div class="r"><span class="c">30</span><h3>Contato inválido<small>40%</small></h3>
+    <div class="meter"><i style="width:40.0%"></i></div>
+    <p>22 são da 1ª rodada (10 sem anotação, 6 falha no envio, 5 não é lavanderia / não lava enxoval, 1 fechada ou contato de outra empresa). Na rodada do agente, 8 (3 sem telefone no card, 3 não é lavanderia / não lava enxoval, 2 fechada ou contato de outra empresa). 8 dos marcados como Contato inválido na verdade não são lavanderia ou não lavam enxoval: vale reclassificar o motivo.</p>
+    <span class="who">5àsec · Alva · América · Brasperola · CNPJ 68.905.245 · DG Limp Service · Disk Limpeza Total · Eco Higienização · e mais 22 (todos na tabela no fim)</span></div>
+  <div class="r"><span class="c">6</span><h3>Autoatendimento<small>8%</small></h3>
+    <div class="meter"><i style="width:8.0%"></i></div>
+    <p>É o principal motivo entre quem respondeu. 2 foram classificadas na 1ª rodada e 4 na rodada do agente.</p>
+    <span class="who">Bubble Box · Express1 · Laundromat · Laundromat Centro · Lavô Centro · Thais De Castro E Silva Dias</span></div>
+  <div class="r"><span class="c">2</span><h3>Valor<small>2,7%</small></h3>
+    <div class="meter"><i style="width:2.7%"></i></div>
+    <p>Perdidas por preço: Poços de Caldas- (Centro) (cobra por quilo, sem anotação); Poços de Caldas (cobra por quilo, sem anotação).</p>
+    <span class="who">Poços de Caldas · Poços de Caldas- (Centro)</span></div>
+  <div class="r"><span class="c">1</span><h3>Parou de responder<small>1,3%</small></h3>
+    <div class="meter"><i style="width:1.3%"></i></div>
+    <p>Marcada no Pipedrive como "Parou de Responder", sem anotação no card.</p>
+    <span class="who">Maria Ivone Ferreira</span></div>
+  <div class="r"><span class="c">1</span><h3>Motivo a corrigir<small>1,3%</small></h3>
+    <div class="meter"><i style="width:1.3%"></i></div>
+    <p>O motivo marcado no Pipedrive ("Não Trabalha com fotos de imóveis") é de fotógrafo; a anotação diz que não é lavanderia.</p>
+    <span class="who">Disk Limpeza Total</span></div>
+</div>
+<h2>Quem entrou</h2>
+<div class="won">
+  <div><h3>Lava &amp; Passa (CNPJ 56.481.561)</h3><p>Fica em área rural de Poços de Caldas. Ganha em 19/10 às 17h57 e cadastrada no Hub de serviços. É a 1ª lavanderia ganha na cidade.</p></div>
+  <div><h3>Lavanderia da Marli (CNPJ 53.811.574)</h3><p>Fica na Estância São José. Ganha em 20/10 às 09h46, sem anotação no card.</p></div>
+  <div><h3>Merli</h3><p>Lavanderia de hotéis e indústrias, desde 1989. Ganha em 20/10 às 09h48; a anotação diz que já estava cadastrada na base de lavanderias. Havia um card dela na 1ª rodada, perdido como "Sem Retorno".</p></div>
+  <div><h3>Eco Higienização (prestador de serviço)</h3><p>Lava e impermeabiliza estofados e carpetes. Ganha em 20/10 às 15h17 como prestador de serviço. Na 1ª rodada o card dela foi perdido com a anotação "Não é lavanderia".</p></div>
+</div>
+<h2>Conclusão</h2>
+<div class="concl">
+  <p><b>O agente fez a cadência inteira sozinho.</b> 43 telefones receberam o 1º contato, 40 o 2º e 33 o último, entre 16/10 e 21/10. Em 21/10 ele encerrou 29 cards sem retorno.</p>
+  <p><b>Responderam 12 de 43 telefones (27,9%) e 4 viraram ganho.</b> O 1º contato trouxe 2 respostas, o 2º trouxe 6 e o último 4: a maior parte das respostas veio depois do 2º contato.</p>
+  <p><b>O contato inválido foi o maior motivo de perda: 30 de 75.</b> 22 vieram da 1ª rodada. Na 2ª rodada, 6 cards não receberam mensagem: 3 por telefone vazio no card e 3 descartados à mão no Backlog antes do 1º contato. Para as próximas cidades:</p>
+  <ol>
+    <li><b>Conferir o telefone antes de criar o card.</b> 3 cards da 2ª rodada (CNPJ 68.905.245, Laundromat São Domingos e Salomão) tinham telefone vazio, e o agente tentou o 1º contato em 3 rodadas, sem sucesso.</li>
+    <li><b>Tirar duplicados entre rodadas.</b> 14 cards da 2ª rodada repetem o telefone de um card da 1ª. A Merli foi perdida como "Sem Retorno" na 1ª rodada e ganha na 2ª.</li>
+    <li><b>Reclassificar o motivo dos que não são lavanderia.</b> Vários cards "Não é lavanderia" ou "Não lava enxoval" estão como Contato inválido; Disk Limpeza Total está com um motivo de fotógrafo.</li>
+    <li><b>Decidir como tratar prestador de serviço.</b> A Eco Higienização foi perdida como "Não é lavanderia" na 1ª rodada e ganha como prestador de serviço na 2ª.</li>
+  </ol>
+  <p>Poços de Caldas fica com 4 ganhas e nenhum card em aberto.</p>
+</div>
+<h2>Todos os cards</h2>
+<p class="sub">"Até onde foi" é a última mensagem do agente que o card recebeu. A 1ª rodada foi feita à mão e não tem registro de mensagens.</p>
+<div class="tbl"><table>
+<thead><tr><th>Lavanderia</th><th>Bairro</th><th>Até onde foi</th><th>Resultado</th><th>Anotação</th></tr></thead>
+<tbody>
+<tr><td>CNPJ 53.811.574 Lavanderia da Marli</td><td>Estancia Sao Jose</td><td>2º</td><td><span class="tag g">Ganho</span></td><td></td></tr>
+<tr><td>CNPJ 56.481.561 lava &amp; Passa</td><td>Area Rural De Pocos De Caldas</td><td>2º</td><td><span class="tag g">Ganho</span></td><td>Cadastrado no Hub de serviço</td></tr>
+<tr><td>Eco Higienização</td><td>Conjunto Habitacional Pedro Afonso Junqueira</td><td>Último</td><td><span class="tag g">Ganho</span></td><td></td></tr>
+<tr><td>Merli</td><td>Jardim Kennedy</td><td>2º</td><td><span class="tag g">Ganho</span></td><td>Já esta cadastrada na base de lavanderias</td></tr>
+<tr><td>Poços de Caldas</td><td>Jardim Country Club</td><td>2º</td><td><span class="tag p">Cobra por quilo</span></td><td></td></tr>
+<tr><td>Poços de Caldas- (Centro)</td><td>Centro</td><td>2º</td><td><span class="tag p">Cobra por quilo</span></td><td></td></tr>
+<tr><td>Bubble Box</td><td>Centro</td><td>sem contato</td><td><span class="tag p">Autoatendimento</span></td><td></td></tr>
+<tr><td>Express1</td><td>Centro</td><td>1º</td><td><span class="tag p">Autoatendimento</span></td><td></td></tr>
+<tr><td>Laundromat</td><td>Centro</td><td>Último</td><td><span class="tag p">Autoatendimento</span></td><td></td></tr>
+<tr><td>Thais De Castro E Silva Dias</td><td>Jardim Ipe</td><td>2º</td><td><span class="tag p">Autoatendimento</span></td><td></td></tr>
+<tr><td>Laundromat Centro</td><td>Centro</td><td>1ª rodada (à mão)</td><td><span class="tag p">Autoatendimento</span></td><td></td></tr>
+<tr><td>Lavô Centro</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Autoatendimento</span></td><td>Não tem telefone e é self service</td></tr>
+<tr><td>Disk Limpeza Total</td><td>Centro</td><td>1º</td><td><span class="tag a">Motivo errado</span></td><td>Não e lavanderia; motivo marcado é de fotógrafo</td></tr>
+<tr><td>Maria Ivone Ferreira</td><td>Centro</td><td>Último</td><td><span class="tag p">Parou de responder</span></td><td></td></tr>
+<tr><td>5àsec</td><td>Centro</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Acqua</td><td>Jardim Country Club</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Alva</td><td>Centro</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>América</td><td>Centro</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Beau Lavaux</td><td>Parque Vivaldi Leite Ribeiro</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>CLM</td><td>Centro</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>CNPJ 05.861.379</td><td>Centro</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>CNPJ 43.157.747</td><td>Jardim Das Hortensias</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>CNPJ 58.706.371</td><td>Parque San Carlo</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>CNPJ 66.922.615</td><td>Jardim Dos Estados</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>DG Limp Service</td><td>Jardim Country Club</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Elis</td><td>Bortolan</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Evando Jose Ribeiro</td><td>Jardim Country Club</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Gilberto Gonçalves</td><td></td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>JG</td><td>Jardim Quisisana</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Laundromat II</td><td>Centro</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Laundry Pocos</td><td></td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Lava e Leva</td><td></td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Lavaki</td><td>Residencial Sao Bernardo</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Lavô Centro</td><td>Centro</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Lawax</td><td>Country Club</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>LM Passadoria</td><td>Jardim America</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Luciana Ayres</td><td>Dom Bosco</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Lurdes</td><td>Jardim Centenario</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Natalia Conceicao Dias</td><td>Jardim Quisisana</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Panamericana</td><td>Centro</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Poços Clean</td><td></td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Sonia Braziel</td><td></td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Uhull</td><td>Centro</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Brasperola</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>CLM</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Lavaki</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Lurdes</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Poços de Caldas</td><td>Jardim Country Club</td><td>1ª rodada (à mão)</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Uhull</td><td>Centro</td><td>1ª rodada (à mão)</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Brasperola</td><td></td><td>Último</td><td><span class="tag p">Contato inválido</span></td><td>Lavanderia não opera mais, está fechada</td></tr>
+<tr><td>CNPJ 68.905.245</td><td>Vila Cruz</td><td><span class="flag">envio falhou</span></td><td><span class="tag p">Contato inválido</span></td><td>Sem telefone</td></tr>
+<tr><td>Jeito de Casa</td><td></td><td>2º</td><td><span class="tag p">Contato inválido</span></td><td>Não é lavanderia</td></tr>
+<tr><td>Laundromat São Domingos</td><td>Sao Domingos</td><td><span class="flag">envio falhou</span></td><td><span class="tag p">Contato inválido</span></td><td>Sem telefone</td></tr>
+<tr><td>Marcos Alamis De Carvalho</td><td>Campo Da Mogiana</td><td>1º</td><td><span class="tag p">Contato inválido</span></td><td>Não opera mais na área há mais de 1 ano.</td></tr>
+<tr><td>Restaura Jeans</td><td>Galeria Brasil</td><td>sem contato</td><td><span class="tag p">Contato inválido</span></td><td>Não é lavanderia de enxoval</td></tr>
+<tr><td>Rosa Prestação de Serviços</td><td>Dom Bosco</td><td>sem contato</td><td><span class="tag p">Contato inválido</span></td><td>Não lava enxoval</td></tr>
+<tr><td>Salomão</td><td>Centro</td><td><span class="flag">envio falhou</span></td><td><span class="tag p">Contato inválido</span></td><td>Sem telefone</td></tr>
+<tr><td>5àsec</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td></td></tr>
+<tr><td>Alva</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td></td></tr>
+<tr><td>América</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Falha</td></tr>
+<tr><td>DG Limp Service</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Não é lavanderia</td></tr>
+<tr><td>Disk Limpeza Total</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Não é lavanderia</td></tr>
+<tr><td>Eco Higienização</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Não é lavanderia</td></tr>
+<tr><td>Gilberto Gonçalves</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td></td></tr>
+<tr><td>Hig Doctor</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Não é lavanderia</td></tr>
+<tr><td>Jeito de Casa</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Falha</td></tr>
+<tr><td>JG</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td></td></tr>
+<tr><td>Laundromat Industrial</td><td>Centro</td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td></td></tr>
+<tr><td>Laundry Pocos</td><td>Centro</td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td></td></tr>
+<tr><td>Lava e Leva</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Falha</td></tr>
+<tr><td>Lawax</td><td>Country Club</td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td></td></tr>
+<tr><td>LM</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td></td></tr>
+<tr><td>Luciana Ayres</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Falha</td></tr>
+<tr><td>Merli</td><td>Jardim Kennedy</td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td></td></tr>
+<tr><td>Panamericana</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Falha</td></tr>
+<tr><td>Restaura Jeans</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Não trabalha com enxoval</td></tr>
+<tr><td>Rosa Prestação de Serviços</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td></td></tr>
+<tr><td>Rosiane Domingues</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Falha</td></tr>
+<tr><td>Sonia Braziel</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Contato não pertence mais à lavanderia</td></tr>
+</tbody></table></div>
+
+<footer>"Respondeu" soma o ganho, quem entrou em "Em negociação" e quem deu um motivo de recusa (autoatendimento, valor, parou de responder). Os números de funil e lead time são da rodada do agente (49 cards, 47 telefones diferentes); a 1ª rodada (30 cards) entra só nos totais e nos motivos. Horários de Brasília; as anotações são da Wânia. A mesma lavanderia pode aparecer duas vezes, uma em cada rodada.</footer>
+</main></body></html>

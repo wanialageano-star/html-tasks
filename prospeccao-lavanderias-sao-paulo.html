@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lavanderias em São Paulo</title>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#080E32;--surf:#0F1742;--surf2:#18225A;
+  --line:#232E6B;--ink:#EEF1FB;--ink2:#B4BBD9;--ink3:#8189B0;
+  --won:oklch(78% .12 150);--lost:oklch(72% .13 30);--amber:oklch(82% .13 80);--blue:#4D85FF;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Figtree",sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:880px;margin:0 auto;padding:56px 16px 96px}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);font-weight:700}
+h1{font-family:"Figtree",sans-serif;font-weight:800;font-size:clamp(34px,6.5vw,56px);letter-spacing:-.03em;line-height:1;margin:14px 0 14px}
+h2{font-family:"Figtree",sans-serif;font-weight:600;font-size:24px;letter-spacing:-.015em;margin:64px 0 6px}
+.lede{color:var(--ink2);font-size:18px;max-width:60ch;margin:0}
+.meta{color:var(--ink3);font-size:13.5px;margin-top:18px}
+p{max-width:66ch}
+.sub{color:var(--ink2);margin:0 0 22px}
+
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:40px}
+.nums div{background:var(--surf);padding:22px 20px}
+.nums b{display:block;font-family:"Figtree",sans-serif;font-size:44px;font-weight:800;line-height:1;letter-spacing:-.03em}
+.nums span{display:block;color:var(--ink2);font-size:13.5px;margin-top:8px;max-width:20ch}
+.nums .w b{color:var(--won)} .nums .l b{color:var(--lost)} .nums .a b{color:var(--amber)}
+
+.funnel{display:flex;flex-direction:column;gap:10px}
+.step{display:grid;grid-template-columns:190px 1fr 44px;align-items:center;gap:14px}
+.step .t{font-size:14.5px;color:var(--ink2)}
+.step .bar{height:26px;border-radius:6px;background:var(--surf2);overflow:hidden}
+.step .bar i{display:block;height:100%;background:var(--blue);border-radius:6px}
+.step .n{font-weight:700;text-align:right;font-variant-numeric:tabular-nums}
+.step.win .bar i{background:var(--won)}
+.step.neg .bar i{background:var(--won);opacity:.55}
+
+.reasons{border-top:1px solid var(--line)}
+.r{display:grid;grid-template-columns:34px 1fr;gap:6px 18px;padding:20px 0;border-bottom:1px solid var(--line)}
+.r .c{font-family:"Figtree",sans-serif;font-size:30px;font-weight:800;line-height:1;color:var(--lost);font-variant-numeric:tabular-nums}
+.r h3{margin:0;font-size:17px;font-weight:700}
+.r h3 small{color:var(--ink3);font-weight:500;font-size:13.5px;margin-left:8px}
+.r p{grid-column:2;margin:4px 0 0;color:var(--ink2);font-size:15px}
+.r .who{grid-column:2;color:var(--ink3);font-size:13.5px;margin-top:6px}
+.meter{grid-column:2;height:6px;background:var(--surf2);border-radius:3px;overflow:hidden;margin-top:4px}
+.meter i{display:block;height:100%;background:var(--lost)}
+
+blockquote{margin:22px 0;padding:20px 22px;background:var(--surf);border-radius:12px;color:var(--ink);font-size:16.5px;line-height:1.55}
+blockquote cite{display:block;margin-top:10px;color:var(--ink3);font-style:normal;font-size:13.5px}
+
+.won{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.won div{background:var(--surf);border-radius:12px;padding:20px}
+.won h3{margin:0 0 4px;font-size:17px;color:var(--won)}
+.won p{margin:0;color:var(--ink2);font-size:14.5px}
+
+.concl{background:var(--surf);border-radius:16px;padding:28px 26px;margin-top:18px}
+.concl p{margin:0 0 14px;color:var(--ink)}
+.concl p:last-child{margin:0}
+.concl ol{margin:6px 0 14px;padding-left:20px;color:var(--ink2)}
+.concl li{margin:8px 0}
+.concl li b{color:var(--ink)}
+
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:14px}
+th{text-align:left;color:var(--ink3);font-weight:500;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:12px 14px;background:var(--surf)}
+td{padding:12px 14px;border-top:1px solid var(--line);vertical-align:top;color:var(--ink2)}
+td:first-child{color:var(--ink);font-weight:500}
+.tag{display:inline-block;padding:2px 10px;border-radius:999px;font-size:12px;font-weight:700;white-space:nowrap}
+.tag.g{background:oklch(78% .12 150 / .16);color:var(--won)}
+.tag.a{background:oklch(80% .13 80 / .16);color:var(--amber)}
+.tag.p{background:oklch(70% .13 35 / .16);color:var(--lost)}
+.flag{color:var(--amber)}
+.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.dim{color:var(--ink3)}
+footer{margin-top:56px;color:var(--ink3);font-size:13px}
+
+@media (max-width:640px){
+  .nums{grid-template-columns:1fr 1fr}
+  .step{grid-template-columns:1fr 40px}
+  .step .t{grid-column:1/-1}
+  .won{grid-template-columns:1fr}
+}
+
+.tl{border-left:2px solid var(--line);margin:8px 0 0 6px;padding-left:22px}
+.tl div{position:relative;padding:0 0 22px}
+.tl div:before{content:"";position:absolute;left:-29px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--blue)}
+.tl div.g:before{background:var(--won)} .tl div.p:before{background:var(--lost)}
+.tl b{display:block;font-size:13px;color:var(--ink3);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+.tl p{margin:2px 0 0;color:var(--ink2);font-size:15px}
+.tl p strong{color:var(--ink)}
+.badge{display:inline-block;margin-top:22px;padding:6px 14px;border-radius:999px;background:oklch(78% .12 150 / .14);color:var(--won);font-size:13px;font-weight:700}
+</style></head><body><main>
+
+<span class="eyebrow">Prospecção de Fornecedores · Lavanderias · SP</span>
+<h1>Prospecção Lavanderias São Paulo</h1>
+<p class="lede">São Paulo teve 158 lavanderias no funil, em duas rodadas. A 1ª rodada, em 25/09 e à mão, teve 67 cards: 52 viraram contato inválido e nenhum foi ganho. Na 2ª, o agente mandou mensagem pela SIA para 90 telefones entre 19/10 e 21/10, e 14 responderam. Saíram 2 ganhas e 153 perdidas, 72 delas encerradas pelo agente em 22/10. Ficam 3 cards em aberto, dois deles indicados por lavanderias que responderam.</p>
+<p class="meta">Fonte: Pipedrive, funil 60 "Prospecção Fornecedores", com o histórico de etapas e as anotações de cada card · 67 cards criados em 25/09 (1ª rodada), 88 em 16/10 a partir da base da Receita (CNAE 9601) e 3 entre 20 e 21/10 (indicações) · mensagens do agente entre 19/10 e 21/10 · negociação feita pela Wânia · atualizado em 22/10/2026</p>
+<div class="nums">
+  <div><b>158</b><span>lavanderias no funil (126 telefones diferentes)</span></div>
+  <div class="a"><b>14</b><span>responderam na rodada do agente (91 cards)</span></div>
+  <div class="w"><b>2</b><span>ganhas</span></div>
+  <div class="l"><b>153</b><span>perdidas, 72 delas encerradas pelo agente</span></div>
+</div>
+<h2>Como o agente trabalhou</h2>
+<p class="sub">O agente manda as mensagens e move os cards sozinho. Quem responde, a Wânia passa para "Em negociação" e o agente não mexe mais no card. Horários de Brasília.</p>
+<div class="tl">
+  <div><b>25/09 · 1ª rodada, à mão</b><p>67 lavanderias viram card em 25/09. O contato foi feito pelo time e os resultados foram marcados à mão, entre 25/09 e 07/10. Nenhuma foi ganha.</p></div>
+  <div><b>16/10 · rodada do agente</b><p>88 lavanderias viram card no Backlog, a partir da base da Receita. Mais 3 entraram depois, por indicação, até 21/10.</p></div>
+  <div><b>19/10 · 1º contato</b><p>O agente envia o <strong>1º contato</strong> (88 em 19/10, 1 em 21/10, 1 em 22/10). Os cards que ainda não tinham telefone ou estavam com conversa aberta na SIA deram erro e ficaram para depois.</p></div>
+  <div><b>20/10 · 2º contato</b><p>Os cards sem resposta vão para a etapa 2º Contato e recebem o <strong>2º contato</strong> (82 em 20/10).</p></div>
+  <div><b>21/10 · último contato</b><p>Os que continuavam sem resposta recebem o <strong>último contato</strong> (76 em 21/10).</p></div>
+  <div class="g"><b>Ganhos</b><p>Entraram na rodada do agente: Viniclean (20/10 às 09h47) e Perfect Clean E Costura (21/10 às 17h47).</p></div>
+  <div class="p"><b>22/10 · encerramento</b><p>O agente marca <strong>72 cards sem retorno como Perdidos</strong> ("Sem Retorno") e move para a etapa de Perda (72 em 22/10).</p></div>
+</div>
+<h2>Lead time da prospecção com IA</h2>
+<p class="sub">Da criação dos cards da rodada do agente até o último card ter resultado. Dias corridos, horários de Brasília. Os 3 cards que seguem em aberto ficaram fora das médias.</p>
+<div class="nums">
+  <div class="a"><b>6d 4h</b><span>LT da cidade: de 16/10 às 11h19 a 22/10 às 15h03</span></div>
+  <div><b>5,9 d</b><span>LT médio por card, do card criado ao resultado</span></div>
+  <div class="w"><b>21h44</b><span>do 1º contato do agente ao 1º ganho</span></div>
+  <div><b>19h17</b><span>mediana da negociação da Wânia, da entrada em negociação ao resultado</span></div>
+</div>
+<div class="tbl"><table style="min-width:0">
+<thead><tr><th>Etapa</th><th class="num">Tempo</th><th>Observação</th></tr></thead>
+<tbody>
+<tr><td>Card criado → 1º contato enviado</td><td class="num">3d 1h</td><td>Cards criados em 16/10 às 11h19 e primeiro 1º contato em 19/10 às 12h03. Os cards ficaram parados de sexta a segunda.</td></tr>
+<tr><td>1º contato → 2º contato</td><td class="num">1d 1h</td><td>19/10 às 12h03 → 20/10 às 13h00</td></tr>
+<tr><td>2º contato → último contato</td><td class="num">1d 1h</td><td>20/10 às 13h00 → 21/10 às 14h00</td></tr>
+<tr><td>Último contato → Perda</td><td class="num">1d 1h</td><td>O agente encerrou os 72 sem retorno em 22/10</td></tr>
+<tr><td>Card criado → ganho</td><td class="num">3,9 d e 5,3 d</td><td>Viniclean e Perfect Clean E Costura</td></tr>
+<tr><td>Em negociação → resultado</td><td class="num">19h17 (mediana)</td><td>12 cards passaram por negociação; o mais longo levou 1d 3h e o mais curto 1 min.</td></tr>
+<tr><td>Card sem retorno → Perda</td><td class="num">6,2 d</td><td>Os 72 cards encerrados pelo agente</td></tr>
+</tbody></table></div>
+<h2>Do contato ao cadastro</h2>
+<p class="sub">Rodada do agente, contada por telefone. 91 telefones diferentes em 91 cards; 90 receberam pelo menos uma mensagem do agente.</p>
+<div class="funnel">
+  <div class="step"><span class="t">Recebeu mensagem</span><span class="bar"><i style="width:100%"></i></span><span class="n">90</span></div>
+  <div class="step"><span class="t">Respondeu</span><span class="bar"><i style="width:15.6%"></i></span><span class="n">14</span></div>
+  <div class="step neg"><span class="t">Foi para negociação</span><span class="bar"><i style="width:13.3%"></i></span><span class="n">12</span></div>
+  <div class="step win"><span class="t">Ganho</span><span class="bar"><i style="width:2.2%"></i></span><span class="n">2</span></div>
+</div>
+<p class="sub" style="margin-top:32px">Qual mensagem trouxe a resposta:</p>
+<div class="tbl"><table style="min-width:0">
+<thead><tr><th>Mensagem do agente</th><th class="num">Enviada para</th><th class="num">Responderam depois dela</th></tr></thead>
+<tbody>
+<tr><td>1º contato · 19/10 a 22/10</td><td class="num">90</td><td class="num">5</td></tr>
+<tr><td>2º contato · 20/10</td><td class="num">82</td><td class="num">6</td></tr>
+<tr><td>Último contato · 21/10</td><td class="num">76</td><td class="num">3</td></tr>
+</tbody></table></div>
+<h2>Por que perdemos</h2>
+<p class="sub">153 cards perdidos, por motivo marcado no Pipedrive. As explicações vêm das anotações da Wânia em cada card.</p>
+<div class="reasons">
+  <div class="r"><span class="c">80</span><h3>Sem retorno<small>52,3%</small></h3>
+    <div class="meter"><i style="width:52.3%"></i></div>
+    <p>72 passaram pela cadência do agente (72 com o último contato enviado), não responderam e foram encerradas por ele. Outras 7 são da 1ª rodada, feita à mão. H. G. M. entrou em negociação e parou. Na 1ª rodada, Luiza e A&amp;F chegaram a negociar e pararam.</p>
+    <span class="who">72 pelo agente · A&amp;F · Acqua - Mourato Coelho · H. G. M. · Laundry · Lav Laundry · LavSec · Lava Art · Luiza</span></div>
+  <div class="r"><span class="c">54</span><h3>Contato inválido<small>35,3%</small></h3>
+    <div class="meter"><i style="width:35.3%"></i></div>
+    <p>52 são da 1ª rodada (21 sem telefone no card, 19 falha no envio, 11 sem anotação, 1 contato de outro ramo). Na rodada do agente, 2 (2 não é lavanderia / não lava enxoval). 2 dos marcados como Contato inválido na verdade não são lavanderia ou não lavam enxoval: vale reclassificar o motivo.</p>
+    <span class="who">1 Morumbi · 5àSec - Alto de Pinheiros · 5àSec - Butantã · Alves · Alvorada · Arcoverde · BLF · BV · e mais 46 (todos na tabela no fim)</span></div>
+  <div class="r"><span class="c">13</span><h3>Autoatendimento<small>8,5%</small></h3>
+    <div class="meter"><i style="width:8.5%"></i></div>
+    <p>É o principal motivo entre quem respondeu. 7 foram classificadas na 1ª rodada e 6 na rodada do agente. Sec Lave disse que é autoatendimento e indicou outra lavanderia, que virou card.</p>
+    <span class="who">60 Minutos - Pinheiros · Acqua Express - Vila Madalena · Adriano Ferreira De Souza · Andrea Ferreira De Souza Santos · Bubble Box Fr 685 B · Dry Clean USA - Real Parque · Fast Faria Lima · Lavateria Fast - Pinheiros · Lavateria Fast - Vila Madalena · OMO · Only Clean · Sec Lave · Seld Express</span></div>
+  <div class="r"><span class="c">4</span><h3>Valor<small>2,6%</small></h3>
+    <div class="meter"><i style="width:2.6%"></i></div>
+    <p>Perdidas por preço: Attiva ("Valor das peças muito alto"); Nikollas Promocoes E Eventos ("Não conseguiu baixar o valor."); Edna Castro Azevedo ("Tabela muito alta, incompatível com nosso padrão. Indicou outra lavanderia."); Fernanda Amorim Canejo (cobra por cesto, sem anotação).</p>
+    <span class="who">Attiva · Edna Castro Azevedo · Fernanda Amorim Canejo · Nikollas Promocoes E Eventos</span></div>
+  <div class="r"><span class="c">2</span><h3>Sem equipamento ou só passadoria<small>1,3%</small></h3>
+    <div class="meter"><i style="width:1.3%"></i></div>
+    <p>Lav Fácil ("Doméstica"); Zmk Roscas Especiais ("Não é lavanderia, somente passadoria.").</p>
+    <span class="who">Lav Fácil · Zmk Roscas Especiais</span></div>
+</div>
+<blockquote>"Tabela muito alta, incompatível com nosso padrão. Indicou outra lavanderia."
+<cite>Anotação da Wânia no card da Edna Castro Azevedo (517923), uma das 3 lavanderias que passaram tabela e não fecharam.</cite></blockquote>
+<h2>Quem entrou</h2>
+<div class="won">
+  <div><h3>Perfect Clean e Costura</h3><p>Atende Butantã e Pinheiros. Recebeu o 1º e o 2º contato do agente e foi ganha em 21/10 às 17h47, cadastrada no Hub de serviços com preço de tabela.</p></div>
+  <div><h3>Viniclean (prestador de serviço)</h3><p>Respondeu ao 1º contato e foi ganha em 20/10 às 09h47. Não é lavanderia: limpa carpete, sofá, tapete e cortina. Foi cadastrada no Hub de serviços, não como lavanderia de enxoval.</p></div>
+  <div><h3 style="color:var(--amber)">Para acompanhar: 3 cards abertos</h3><p>O card Julio Paineiras veio de indicação da Sec Lave, que é autoatendimento; recebeu o 1º contato do agente em 21/10 e o 2º falhou porque já havia conversa aberta na SIA. A lavanderia Gaivota foi indicada pela Bubble Box na conversa da SIA em 21/10 e recebeu o 1º contato. A Eliana Lavanderia entrou em 21/10 e ainda não recebeu mensagem.</p></div>
+</div>
+<h2>Conclusão</h2>
+<div class="concl">
+  <p><b>O agente fez a cadência inteira sozinho.</b> 90 telefones receberam o 1º contato, 82 o 2º e 76 o último, em três dias úteis (19/10 a 21/10). Em 22/10 ele encerrou 72 cards sem retorno sem ninguém mexer.</p>
+  <p><b>Responderam 14 de 90 telefones (15,6%).</b> O 1º contato trouxe 5 respostas, o 2º trouxe 6 e o último 3. Foi o 2º contato que mais trouxe resposta.</p>
+  <p><b>O gargalo é a qualidade da base, não o contato.</b> Na 1ª rodada, 52 de 67 cards (77,6%) foram marcados como contato inválido, quase todos por falta de telefone ou falha no envio, e nenhum foi ganho. Das 14 lavanderias que responderam na 2ª rodada, 2 fecharam; entre as demais: 6 autoatendimento, 3 valor alto, 1 cobra por cesto, 1 sem equipamento, 1 sem retorno. Para as próximas cidades:</p>
+  <ol>
+    <li><b>Conferir telefone e WhatsApp antes de criar o card.</b> Na 1ª rodada, 52 de 67 cards ficaram sem contato válido.</li>
+    <li><b>Separar o autoatendimento antes da cadência.</b> Ele foi o principal motivo entre quem respondeu.</li>
+    <li><b>Reclassificar o motivo dos cards "Não é lavanderia".</b> Fast Ferreira e Ines Laura Da Rocha estão como Contato inválido, com anotação de que não são lavanderia.</li>
+    <li><b>Seguir as indicações.</b> Julio Paineiras e Gaivota vieram de lavanderias que responderam e continuam abertas.</li>
+  </ol>
+  <p>São Paulo fica com 2 ganhas e 3 cards em aberto.</p>
+</div>
+<h2>Todos os cards</h2>
+<p class="sub">"Até onde foi" é a última mensagem do agente que o card recebeu. A 1ª rodada foi feita à mão e não tem registro de mensagens.</p>
+<div class="tbl"><table>
+<thead><tr><th>Lavanderia</th><th>Bairro</th><th>Até onde foi</th><th>Resultado</th><th>Anotação</th></tr></thead>
+<tbody>
+<tr><td>Perfect Clean E Costura</td><td>Jardim Bonfiglioli</td><td>2º</td><td><span class="tag g">Ganho</span></td><td>Cadastrada no Hub de serviços com preço de tabela, atende os bairros do Butantã e Pinheiros</td></tr>
+<tr><td>Viniclean</td><td>Jardim Celeste</td><td>1º</td><td><span class="tag g">Ganho</span></td><td>Não é lavanderia, é prestador de serviço para limpeza de carpete, sofa, tapete, cortina, etc.. Cadastrado no Hub de serviços</td></tr>
+<tr><td>Eliana Lavanderia</td><td></td><td>sem contato</td><td><span class="tag a">Em aberto</span></td><td></td></tr>
+<tr><td>Gaivota</td><td></td><td>1º</td><td><span class="tag a">Em aberto</span></td><td></td></tr>
+<tr><td>Julio Paineiras</td><td></td><td>1º</td><td><span class="tag a">Em aberto</span></td><td></td></tr>
+<tr><td>Attiva</td><td></td><td>1º</td><td><span class="tag p">Valor alto</span></td><td>Valor das peças muito alto</td></tr>
+<tr><td>Edna Castro Azevedo</td><td>Vila Nova Jaguare</td><td>1º</td><td><span class="tag p">Valor alto</span></td><td>Tabela muito alta, incompatível com nosso padrão. Indicou outra lavanderia.</td></tr>
+<tr><td>Nikollas Promocoes E Eventos</td><td>Vila Sonia</td><td>2º</td><td><span class="tag p">Valor alto</span></td><td>Não conseguiu baixar o valor.</td></tr>
+<tr><td>Fernanda Amorim Canejo</td><td>Jardim Das Vertentes</td><td>1º</td><td><span class="tag p">Cobra por cesto</span></td><td></td></tr>
+<tr><td>Adriano Ferreira De Souza</td><td>Jardim Bonfiglioli</td><td>2º</td><td><span class="tag p">Autoatendimento</span></td><td></td></tr>
+<tr><td>Andrea Ferreira De Souza Santos</td><td>Vila Butanta</td><td>1º</td><td><span class="tag p">Autoatendimento</span></td><td></td></tr>
+<tr><td>Bubble Box Fr 685 B</td><td>Butanta</td><td>Último</td><td><span class="tag p">Autoatendimento</span></td><td></td></tr>
+<tr><td>Only Clean</td><td>Jardim Peri Peri</td><td>Último</td><td><span class="tag p">Autoatendimento</span></td><td></td></tr>
+<tr><td>Sec Lave</td><td>Vila Sonia</td><td>2º</td><td><span class="tag p">Autoatendimento</span></td><td>Indicou outra lavanderia (telefone anotado no card) Julio Paineiras</td></tr>
+<tr><td>Seld Express</td><td>Butanta</td><td>Último</td><td><span class="tag p">Autoatendimento</span></td><td></td></tr>
+<tr><td>60 Minutos - Pinheiros</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Autoatendimento</span></td><td></td></tr>
+<tr><td>Acqua Express - Vila Madalena</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Autoatendimento</span></td><td></td></tr>
+<tr><td>Dry Clean USA - Real Parque</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Autoatendimento</span></td><td></td></tr>
+<tr><td>Fast Faria Lima</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Autoatendimento</span></td><td></td></tr>
+<tr><td>Lavateria Fast - Pinheiros</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Autoatendimento</span></td><td></td></tr>
+<tr><td>Lavateria Fast - Vila Madalena</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Autoatendimento</span></td><td></td></tr>
+<tr><td>OMO</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Autoatendimento</span></td><td></td></tr>
+<tr><td>Zmk Roscas Especiais</td><td>Jardim Das Vertentes</td><td>2º</td><td><span class="tag p">Sem equipamento</span></td><td>Não é lavanderia, somente passadoria.</td></tr>
+<tr><td>Lav Fácil</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Sem calandra</span></td><td>Doméstica</td></tr>
+<tr><td>#1 Morumbi</td><td>Morumbi</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>5àsec Alto de Pinheiros</td><td>Alto De Pinheiros</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>5àsec Morumbi</td><td>Morumbi</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>5àsec Raposo Tavares</td><td></td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>60 Minutos Sp190</td><td>Butanta</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>A Sec</td><td>Butanta</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Alvorada</td><td>Jardim Celeste</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Arco Verde</td><td>Pinheiros</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Bambini</td><td>Vila Progredior</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Beatriz Dos Santos Oliveira</td><td>Jardim Arpoador</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Bibi Clean</td><td>Jaguare</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Blue Zone</td><td>Morumbi</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Bora Lavar Express</td><td>Jardim Gilda Maria</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Butantã Express</td><td>Butantã</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Carlos Cesar Silveira Amaral</td><td>Jardim Jussara</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Cgm</td><td>Caxingui</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Cris</td><td>Jardim Rio Pequeno</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>D N</td><td>Parque Continental</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Daruma Lc</td><td>Jardim Jussara</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Dl &amp; Il</td><td>Vila Butanta</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Dry &amp; Wet</td><td>Rio Pequeno</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Dry Clean USA Pinheiros</td><td>Pinheiros</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>E Tinturaria Progredior</td><td>Vila Progredior</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>E Tinturaria Real Parque</td><td>Paineiras Do Morumbi</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Edson Cruz</td><td>Vila Pirajussara</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Elite</td><td>Butantã</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Fidelis Morumbi</td><td>Morumbi</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Filips</td><td>Jardim Ester</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Flaro</td><td>Alto De Pinheiros</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Gm</td><td>Jardim Das Vertentes</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>H. G. M.</td><td>Jardim Das Vertentes</td><td>2º</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Ike</td><td></td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Iracema Rosa Da Silva</td><td>Jaguare</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Itapura</td><td>Morumbi</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Josafa Firmino De Oliveira</td><td>Jardim Celeste</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Kawa</td><td>Butantã</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Kinguio</td><td>Butanta</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>L Do Valle Waterdry</td><td>Jardim Das Vertentes</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Laundromat Pinheiros</td><td>Pinheiros</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Lavadin</td><td>Vila Butanta</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Laverie Morumbi</td><td>Vila Suzana</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Lavo Jd. Peri Peri</td><td>Jardim Peri Peri</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Lavo Vila Sonia</td><td>Vila Sonia</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Lavoro</td><td>Alto De Pinheiros</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Lavuchi Especializada</td><td>Jardim Peri Peri</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Lavze</td><td>Jardim Boa Vista (Zona Oeste)</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Lavô Butantã</td><td>Butantã</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Lavô Pinheiros</td><td>Pinheiros</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Luana Villaca</td><td>Vila Butanta</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Luciana Gimenez De Pontes Freitas</td><td>Jardim Maria Luiza</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Luciano Teixeira Falcao</td><td>Jardim Boa Vista (Zona Oeste)</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Maria Fernanda Parada</td><td>Jardim Sao Jorge (Raposo Tavares)</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Oliveira</td><td>Pinheiros</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>OMO Morumbi</td><td>Morumbi</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Oqrb Solucoes Em Gestao E Higiene</td><td>Rio Pequeno</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Oscar Erick Escate Zarate Filho</td><td>Jaguare</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Rapclean Express</td><td>Vila Sonia</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Rcn Logistica</td><td>Vila Sao Francisco</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Richard De Brito Gomes</td><td>Jardim Sao Jorge (Raposo Tavares)</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Royal Clean</td><td>Vila Sonia</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Simone De Oliveira Sancho</td><td>Jardim Sao Jorge (Raposo Tavares)</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Sol A Sol E Passadoria</td><td>Jardim Peri Peri</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Sol E Sabao</td><td>Vila Butanta</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Sonia Regina Prestes Miramontes Madoglio</td><td>Morumbi</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Sta. Maria</td><td>Vila Progredior</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Tamako Yoshino</td><td>Vila Sonia</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Tl</td><td>Butanta</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Tucuna</td><td>Vila Progredior</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Tullipa</td><td>Vila Sao Francisco</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Valdemir Borges Dos Santos</td><td>Jardim Jussara</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Vcm</td><td>Parque Continental</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Veralucia Silva Nepomuceno</td><td>Fazenda Morumbi</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>We Wash</td><td>Vila Progredior</td><td>Último</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>A&amp;F</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Sem retorno</span></td><td>Parou de responder</td></tr>
+<tr><td>Acqua - Mourato Coelho</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Laundry</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Lav Laundry</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Lava Art</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>LavSec</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Luiza</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Sem retorno</span></td><td></td></tr>
+<tr><td>Fast Ferreira</td><td>Vila Sonia</td><td>Último</td><td><span class="tag p">Contato inválido</span></td><td>Não é lavanderia, é escritório de cotabilidade</td></tr>
+<tr><td>Ines Laura Da Rocha</td><td>Jaguare</td><td>1º</td><td><span class="tag p">Contato inválido</span></td><td>Não é lavanderia</td></tr>
+<tr><td>1 Morumbi</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>sem telefone</td></tr>
+<tr><td>5àSec - Alto de Pinheiros</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Sem telefone</td></tr>
+<tr><td>5àSec - Butantã</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td></td></tr>
+<tr><td>Alves</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td></td></tr>
+<tr><td>Alvorada</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Sem telefone</td></tr>
+<tr><td>Arcoverde</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Falha</td></tr>
+<tr><td>BLF</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Falha</td></tr>
+<tr><td>Bonfa</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Sem telefone</td></tr>
+<tr><td>Bonfiglioli</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Sem telefone</td></tr>
+<tr><td>Butantã Express</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td></td></tr>
+<tr><td>BV</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Sem telefone</td></tr>
+<tr><td>Capri</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Falha</td></tr>
+<tr><td>Caracol</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Sem telefone</td></tr>
+<tr><td>Cardeal &amp; Melita - Amaro Cavalheiro</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Falha</td></tr>
+<tr><td>Cardeal &amp; Melita - Simão Álvares</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Falha</td></tr>
+<tr><td>Center Wash</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td></td></tr>
+<tr><td>Ciclo Lumina</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Falha</td></tr>
+<tr><td>Clean Press</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td></td></tr>
+<tr><td>Dry Clean USA - Alto de Pinheiros</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Sem telefone</td></tr>
+<tr><td>Dry Clean USA - Artur de Azevedo</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Sem telefone</td></tr>
+<tr><td>Dry Clean USA - João Moura</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Falha</td></tr>
+<tr><td>Evolution - Jardins</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Sem telefone</td></tr>
+<tr><td>Evolution - Real Parque</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Sem telefone</td></tr>
+<tr><td>Express Jardins</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td></td></tr>
+<tr><td>IKE</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Sem telefone</td></tr>
+<tr><td>Italian Wash</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td></td></tr>
+<tr><td>Jocirlene</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Falha</td></tr>
+<tr><td>Kawa</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Sem telefone</td></tr>
+<tr><td>King Wash</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Falha</td></tr>
+<tr><td>Laundromat</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Falha</td></tr>
+<tr><td>Lauro</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Falha</td></tr>
+<tr><td>Lavadero</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td></td></tr>
+<tr><td>Lavamax</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Falha</td></tr>
+<tr><td>Lavanda</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Sem telefone</td></tr>
+<tr><td>Lave &amp; Passe</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Falha</td></tr>
+<tr><td>Lavoro</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>falha</td></tr>
+<tr><td>Lavô - Pinheiros</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Sem telefone</td></tr>
+<tr><td>Lavô - Vila Sônia</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Sem telefone</td></tr>
+<tr><td>Limpadora Brilhante</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Falha</td></tr>
+<tr><td>Nascente</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Falha</td></tr>
+<tr><td>Neris</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Falha</td></tr>
+<tr><td>OAG</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Wania, hoje eu atuo no mercado financeiro, com gestão de riscos e proteção financeira... outro seguimento.</td></tr>
+<tr><td>Quality - Jardins</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td></td></tr>
+<tr><td>Quick</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Sem telefoe</td></tr>
+<tr><td>Real Parque</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Sem telefone</td></tr>
+<tr><td>Sol Sabão</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Sem telefone</td></tr>
+<tr><td>Teruko</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>sem telefone</td></tr>
+<tr><td>Touli</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Falha</td></tr>
+<tr><td>Velore Signature</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Sem telefone</td></tr>
+<tr><td>Wash</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td></td></tr>
+<tr><td>West Square</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td>Falha</td></tr>
+<tr><td>Água Marinha</td><td></td><td>1ª rodada (à mão)</td><td><span class="tag p">Contato inválido</span></td><td></td></tr>
+</tbody></table></div>
+
+<footer>"Respondeu" soma o ganho, quem entrou em "Em negociação" e quem deu um motivo de recusa (autoatendimento, valor, sem equipamento, parou de responder). Os números de funil e lead time são da rodada do agente (91 cards, 91 telefones diferentes); a 1ª rodada (67 cards) entra só nos totais e nos motivos. Horários de Brasília; as anotações são da Wânia. Os 3 cards criados em 20 e 21/10 entraram por indicação durante a rodada.</footer>
+</main></body></html>

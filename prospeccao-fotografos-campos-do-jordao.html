@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fotógrafos em Campos do Jordão</title>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#080E32;--surf:#0F1742;--surf2:#18225A;
+  --line:#232E6B;--ink:#EEF1FB;--ink2:#B4BBD9;--ink3:#8189B0;
+  --won:oklch(78% .12 150);--lost:oklch(72% .13 30);--amber:oklch(82% .13 80);--blue:#4D85FF;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Figtree",sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:880px;margin:0 auto;padding:56px 16px 96px}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);font-weight:700}
+h1{font-family:"Figtree",sans-serif;font-weight:800;font-size:clamp(34px,6.5vw,56px);letter-spacing:-.03em;line-height:1;margin:14px 0 14px}
+h2{font-family:"Figtree",sans-serif;font-weight:600;font-size:24px;letter-spacing:-.015em;margin:64px 0 6px}
+.lede{color:var(--ink2);font-size:18px;max-width:60ch;margin:0}
+.meta{color:var(--ink3);font-size:13.5px;margin-top:18px}
+p{max-width:66ch}
+.sub{color:var(--ink2);margin:0 0 22px}
+
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:40px}
+.nums div{background:var(--surf);padding:22px 20px}
+.nums b{display:block;font-family:"Figtree",sans-serif;font-size:44px;font-weight:800;line-height:1;letter-spacing:-.03em}
+.nums span{display:block;color:var(--ink2);font-size:13.5px;margin-top:8px;max-width:20ch}
+.nums .w b{color:var(--won)} .nums .l b{color:var(--lost)} .nums .a b{color:var(--amber)}
+
+.funnel{display:flex;flex-direction:column;gap:10px}
+.step{display:grid;grid-template-columns:190px 1fr 44px;align-items:center;gap:14px}
+.step .t{font-size:14.5px;color:var(--ink2)}
+.step .bar{height:26px;border-radius:6px;background:var(--surf2);overflow:hidden}
+.step .bar i{display:block;height:100%;background:var(--blue);border-radius:6px}
+.step .n{font-weight:700;text-align:right;font-variant-numeric:tabular-nums}
+.step.win .bar i{background:var(--won)}
+.step.neg .bar i{background:var(--won);opacity:.55}
+
+.reasons{border-top:1px solid var(--line)}
+.r{display:grid;grid-template-columns:34px 1fr;gap:6px 18px;padding:20px 0;border-bottom:1px solid var(--line)}
+.r .c{font-family:"Figtree",sans-serif;font-size:30px;font-weight:800;line-height:1;color:var(--lost);font-variant-numeric:tabular-nums}
+.r h3{margin:0;font-size:17px;font-weight:700}
+.r h3 small{color:var(--ink3);font-weight:500;font-size:13.5px;margin-left:8px}
+.r p{grid-column:2;margin:4px 0 0;color:var(--ink2);font-size:15px}
+.r .who{grid-column:2;color:var(--ink3);font-size:13.5px;margin-top:6px}
+.meter{grid-column:2;height:6px;background:var(--surf2);border-radius:3px;overflow:hidden;margin-top:4px}
+.meter i{display:block;height:100%;background:var(--lost)}
+
+blockquote{margin:22px 0;padding:20px 22px;background:var(--surf);border-radius:12px;color:var(--ink);font-size:16.5px;line-height:1.55}
+blockquote cite{display:block;margin-top:10px;color:var(--ink3);font-style:normal;font-size:13.5px}
+
+.won{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.won div{background:var(--surf);border-radius:12px;padding:20px}
+.won h3{margin:0 0 4px;font-size:17px;color:var(--won)}
+.won p{margin:0;color:var(--ink2);font-size:14.5px}
+
+.concl{background:var(--surf);border-radius:16px;padding:28px 26px;margin-top:18px}
+.concl p{margin:0 0 14px;color:var(--ink)}
+.concl p:last-child{margin:0}
+.concl ol{margin:6px 0 14px;padding-left:20px;color:var(--ink2)}
+.concl li{margin:8px 0}
+.concl li b{color:var(--ink)}
+
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:14px}
+th{text-align:left;color:var(--ink3);font-weight:500;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:12px 14px;background:var(--surf)}
+td{padding:12px 14px;border-top:1px solid var(--line);vertical-align:top;color:var(--ink2)}
+td:first-child{color:var(--ink);font-weight:500}
+.tag{display:inline-block;padding:2px 10px;border-radius:999px;font-size:12px;font-weight:700;white-space:nowrap}
+.tag.g{background:oklch(78% .12 150 / .16);color:var(--won)}
+.tag.a{background:oklch(80% .13 80 / .16);color:var(--amber)}
+.tag.p{background:oklch(70% .13 35 / .16);color:var(--lost)}
+.flag{color:var(--amber)}
+.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.dim{color:var(--ink3)}
+footer{margin-top:56px;color:var(--ink3);font-size:13px}
+
+@media (max-width:640px){
+  .nums{grid-template-columns:1fr 1fr}
+  .step{grid-template-columns:1fr 40px}
+  .step .t{grid-column:1/-1}
+  .won{grid-template-columns:1fr}
+}
+
+.tl{border-left:2px solid var(--line);margin:8px 0 0 6px;padding-left:22px}
+.tl div{position:relative;padding:0 0 22px}
+.tl div:before{content:"";position:absolute;left:-29px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--blue)}
+.tl div.g:before{background:var(--won)} .tl div.p:before{background:var(--lost)}
+.tl b{display:block;font-size:13px;color:var(--ink3);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+.tl p{margin:2px 0 0;color:var(--ink2);font-size:15px}
+.tl p strong{color:var(--ink)}
+.badge{display:inline-block;margin-top:22px;padding:6px 14px;border-radius:999px;background:oklch(78% .12 150 / .14);color:var(--won);font-size:13px;font-weight:700}
+</style></head><body><main>
+
+<span class="eyebrow">Prospecção de Fornecedores · Fotógrafos · SP</span>
+<h1>Prospecção Fotógrafos Campos do Jordão</h1>
+<p class="lede">31 fotógrafos procurados em Campos do Jordão (30 da base da Receita e 1 indicado) e 2 ganhos. Os 30 cards da base vieram da Receita com o nicho "A confirmar". A maior parte não respondeu aos três contatos do agente. Entre os 10 que responderam, 4 foram marcados como não fazem foto de imóvel e 3 recusaram pelo valor.</p>
+<p class="meta">Fonte: Pipedrive, funil 60 "Prospecção Fornecedores" · 30 cards criados em 14/10/2026 a partir da base da Receita (CNAE 7420) e 1 em 20/10 por indicação · mensagens do agente entre 16/10 e 22/10 · motivos de perda e anotações de cada card · atualizado em 22/10/2026</p>
+<div class="nums">
+  <div><b>31</b><span>fotógrafos procurados</span></div>
+  <div class="w"><b>2</b><span>ganhos, em 16/10 e 21/10</span></div>
+  <div class="l"><b>28</b><span>perdidos</span></div>
+  <div class="a"><b>1</b><span>em aberto</span></div>
+</div>
+<h2>Do contato ao cadastro</h2>
+<p class="sub">Os 30 cards da base receberam o 1º contato pela SIA entre 16/10 e 19/10. Nenhum envio do 1º contato falhou; as falhas (4 cards) foram em contatos seguintes, porque o telefone já tinha conversa aberta na SIA. 9 dos 30 responderam.</p>
+<div class="funnel">
+  <div class="step"><span class="t">Recebeu o 1º contato</span><span class="bar"><i style="width:100%"></i></span><span class="n">30</span></div>
+  <div class="step"><span class="t">Recebeu o 2º contato</span><span class="bar"><i style="width:80.0%"></i></span><span class="n">24</span></div>
+  <div class="step"><span class="t">Respondeu</span><span class="bar"><i style="width:30.0%"></i></span><span class="n">9</span></div>
+  <div class="step neg"><span class="t">Foi para negociação</span><span class="bar"><i style="width:20.0%"></i></span><span class="n">6</span></div>
+  <div class="step win"><span class="t">Ganho</span><span class="bar"><i style="width:6.7%"></i></span><span class="n">2</span></div>
+</div>
+<h2>Por que perdemos</h2>
+<p class="sub">Os 28 perdidos, por motivo marcado no Pipedrive, com a explicação tirada das anotações de cada card.</p>
+<div class="reasons">
+  <div class="r"><span class="c">19</span><h3>Sem retorno<small>67,9%</small></h3>
+    <div class="meter"><i style="width:67.9%"></i></div>
+    <p>A mensagem foi enviada e não houve resposta. 18 dos 19 receberam as três mensagens do agente (1º, 2º e último contato) e foram encerrados por ele. No card de Sarah de Souza Magno o último contato falhou (conversa aberta na SIA), e no de Jose Ricardo Rovida o 2º contato falhou uma vez antes de ser enviado.</p>
+    <span class="who">Alexsander Franca Soares · Ana Carla · Anna Luiza · Cdj Fotos · Gramado Fotos · Greyce Kelly · Igor Gabriel · Jonathan dos Santos · Jose Ricardo Rovida · Marianna Clara · Mateus Fernandes Polegatto · Milena Fernandes da Silva · Nicolly Estella · Rogerio Fernandes Bazan · Sandra Mara · Sarah de Souza Magno · Wesley Fernando · Willian de Araujo Bicudo · Yasmin Esteves de Oliveira</span></div>
+  <div class="r"><span class="c">4</span><h3>Não faz foto de imóvel<small>14,3%</small></h3>
+    <div class="meter"><i style="width:14.3%"></i></div>
+    <p>Quatro cards marcados como "Não Trabalha com fotos de imóveis": Diego Oliveira dos Santos (sem anotação); Maria Fernanda ("Trabalha com parte de vídeo"); Matheus Augusto ("Não tem interesse"); Tafnis Cailane ("Indicou outro fotógrafo (telefone anotado no card) Braga - Fotógrafo Campos do Jordão."). Tafnis Cailane indicou Braga, que virou card.</p>
+    <span class="who">Diego Oliveira dos Santos · Maria Fernanda · Matheus Augusto · Tafnis Cailane</span></div>
+  <div class="r"><span class="c">3</span><h3>Valor<small>10,7%</small></h3>
+    <div class="meter"><i style="width:10.7%"></i></div>
+    <p>Três cards: Braga ("Achou o valor proposto muito baixo e preferiu não continuar."); Jacqueline Gabriele ("Não aceitou e indicou outra profissional."); Kelvia Silva ("Achou os valores oferecidos muito baixos."). O card de Braga veio por indicação de Tafnis Cailane, entrou direto em negociação no dia da criação e foi encerrado no dia seguinte.</p>
+    <span class="who">Braga · Jacqueline Gabriele · Kelvia Silva</span></div>
+  <div class="r"><span class="c">1</span><h3>Contato inválido<small>3,6%</small></h3>
+    <div class="meter"><i style="width:3.6%"></i></div>
+    <p>O card de Daniel dos Santos Cardoso foi marcado como contato inválido cerca de 3 dias depois do 1º contato, sem anotação. Vale confirmar se o número não tem WhatsApp.</p>
+    <span class="who">Daniel dos Santos Cardoso</span></div>
+  <div class="r"><span class="c">1</span><h3>Parou de responder<small>3,6%</small></h3>
+    <div class="meter"><i style="width:3.6%"></i></div>
+    <p>No card de Pedro Henrique o 2º contato falhou três vezes por conversa aberta na SIA; o card foi para negociação e foi perdido no mesmo minuto, sem anotação. Vale confirmar o motivo.</p>
+    <span class="who">Pedro Henrique</span></div>
+</div>
+<blockquote>"Achou os valores oferecidos muito baixos."
+<cite>Anotação da Wânia no card de Kelvia Silva (514528). Outros dois cards têm o mesmo motivo.</cite></blockquote>
+<h2>De onde veio cada fotógrafo</h2>
+<p class="sub">Quase todos vieram só da Receita (CNAE 7420), sem nicho conferido. Só 2 cards da base têm site cadastrado, e é o mesmo para os dois (claraematheus.com: Marianna Clara e Matheus Augusto, que talvez sejam o mesmo estúdio).</p>
+<div class="tbl"><table>
+<thead><tr><th>Origem</th><th class="num">Fotógrafos</th><th class="num">Contato inválido</th><th class="num">Sem retorno</th><th class="num">Responderam</th><th class="num">Ganho</th></tr></thead>
+<tbody>
+<tr><td>Base por CNAE</td><td class="num">28</td><td class="num">1</td><td class="num">18</td><td class="num">8</td><td class="num">2</td></tr>
+<tr><td>Base por CNAE + site próprio</td><td class="num">2</td><td class="num">0</td><td class="num">1</td><td class="num">1</td><td class="num">0</td></tr>
+<tr><td>Indicação</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">1</td><td class="num">0</td></tr>
+</tbody></table></div>
+<h2>Quem entrou</h2>
+<div class="won">
+  <div><h3>Renata Rosa Martins</h3><p>Veio da base da Receita (CNAE 7420004), bairro Vila Inglesa. Respondeu ao 1º contato no mesmo dia (16/10), foi para negociação e o card foi ganho em 16/10. Na conversa informou câmera (Canon EOS 5D Mark II), lentes de 25-105 mm e 50 mm, e que tem CNPJ.</p></div>
+  <div><h3>Henrique Rodrigues da Silva</h3><p>Veio da base da Receita (CNAE 7420001), bairro Vila Inglesa. Respondeu depois do 2º contato, foi para negociação em 19/10 e teve o cadastro no Painel de Fotógrafos registrado em 21/10.</p></div>
+</div>
+<h2>Como melhorar a próxima rodada</h2>
+<div class="concl">
+  <p><b>O que mais pesou foi o sem retorno: 19 de 28 perdidos.</b> Entre quem respondeu, o valor (3) e o nicho errado (4) vieram à frente do contato inválido (1).</p>
+  <ol>
+    <li><b>Pesquisar o nicho antes de criar o card.</b> Os 30 cards da base estão como "A confirmar", sem Instagram nem portfólio. Priorizar quem mostra imóvel, arquitetura ou interiores ajuda a evitar os 4 cards marcados como não fazem imóvel.</li>
+    <li><b>Rever o valor oferecido.</b> 3 cards, incluindo o indicado por Tafnis Cailane, foram encerrados por valor.</li>
+    <li><b>Limpar as conversas abertas na SIA.</b> 4 cards tiveram contatos falhando porque o telefone já tinha conversa aberta, e o agente tentou de novo nos dias seguintes.</li>
+    <li><b>Seguir as pontas soltas:</b> a outra pessoa que Jacqueline Gabriele indicou, sem contato anotado, e a conferência do motivo no card de Pedro Henrique.</li>
+  </ol>
+  <p>Em aberto está o card de Victor Hugo, que recebeu o último contato do agente em 22/10. Nas outras cadências, o agente encerrou os sem retorno um dia depois do último contato.</p>
+</div>
+<h2>Todos os fotógrafos</h2>
+<div class="tbl"><table>
+<thead><tr><th>Fotógrafo</th><th>Origem</th><th>Resultado</th><th>Anotação</th></tr></thead>
+<tbody>
+<tr><td>Henrique Rodrigues da Silva</td><td>Base por CNAE</td><td><span class="tag g">Ganho</span></td><td>Cadastrado no Painel de Fotógrafos</td></tr>
+<tr><td>Renata Rosa Martins</td><td>Base por CNAE</td><td><span class="tag g">Ganho</span></td><td>Informou câmera e lentes (25-105 mm e 50 mm) e que tem CNPJ; perguntou sobre uma conversora de grande angular</td></tr>
+<tr><td>Victor Hugo</td><td>Base por CNAE</td><td><span class="tag a">Em aberto</span></td><td>Recebeu os 3 contatos; 2º contato falhou 2 vezes (conversa aberta na SIA, depois erro 502 da SIA)</td></tr>
+<tr><td>Braga</td><td>Indicação</td><td><span class="tag p">Valor alto</span></td><td>Achou o valor proposto muito baixo e preferiu não continuar.</td></tr>
+<tr><td>Jacqueline Gabriele</td><td>Base por CNAE</td><td><span class="tag p">Valor alto</span></td><td>Não aceitou e indicou outra profissional.</td></tr>
+<tr><td>Kelvia Silva</td><td>Base por CNAE</td><td><span class="tag p">Valor alto</span></td><td>Achou os valores oferecidos muito baixos.</td></tr>
+<tr><td>Diego Oliveira dos Santos</td><td>Base por CNAE</td><td><span class="tag p">Não faz imóvel</span></td><td>Sem anotação</td></tr>
+<tr><td>Maria Fernanda</td><td>Base por CNAE</td><td><span class="tag p">Não faz imóvel</span></td><td>Trabalha com parte de vídeo</td></tr>
+<tr><td>Matheus Augusto</td><td>Base por CNAE + site próprio</td><td><span class="tag p">Não faz imóvel</span></td><td>Não tem interesse</td></tr>
+<tr><td>Pedro Henrique</td><td>Base por CNAE</td><td><span class="tag p">Parou de responder</span></td><td>2º contato falhou 3 vezes; foi para negociação e perdido no mesmo minuto</td></tr>
+<tr><td>Tafnis Cailane</td><td>Base por CNAE</td><td><span class="tag p">Não faz imóvel</span></td><td>Indicou outro fotógrafo (telefone anotado no card) Braga - Fotógrafo Campos do Jordão.</td></tr>
+<tr><td>Alexsander Franca Soares</td><td>Base por CNAE</td><td><span class="tag p">Sem retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Ana Carla</td><td>Base por CNAE</td><td><span class="tag p">Sem retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Anna Luiza</td><td>Base por CNAE</td><td><span class="tag p">Sem retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Cdj Fotos</td><td>Base por CNAE</td><td><span class="tag p">Sem retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Gramado Fotos</td><td>Base por CNAE</td><td><span class="tag p">Sem retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Greyce Kelly</td><td>Base por CNAE</td><td><span class="tag p">Sem retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Igor Gabriel</td><td>Base por CNAE</td><td><span class="tag p">Sem retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Jonathan dos Santos</td><td>Base por CNAE</td><td><span class="tag p">Sem retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Jose Ricardo Rovida</td><td>Base por CNAE</td><td><span class="tag p">Sem retorno</span></td><td>Recebeu os 3 contatos; um deles falhou por conversa aberta</td></tr>
+<tr><td>Marianna Clara</td><td>Base por CNAE + site próprio</td><td><span class="tag p">Sem retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Mateus Fernandes Polegatto</td><td>Base por CNAE</td><td><span class="tag p">Sem retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Milena Fernandes da Silva</td><td>Base por CNAE</td><td><span class="tag p">Sem retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Nicolly Estella</td><td>Base por CNAE</td><td><span class="tag p">Sem retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Rogerio Fernandes Bazan</td><td>Base por CNAE</td><td><span class="tag p">Sem retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Sandra Mara</td><td>Base por CNAE</td><td><span class="tag p">Sem retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Sarah de Souza Magno</td><td>Base por CNAE</td><td><span class="tag p">Sem retorno</span></td><td>Último contato falhou (conversa aberta na SIA)</td></tr>
+<tr><td>Wesley Fernando</td><td>Base por CNAE</td><td><span class="tag p">Sem retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Willian de Araujo Bicudo</td><td>Base por CNAE</td><td><span class="tag p">Sem retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Yasmin Esteves de Oliveira</td><td>Base por CNAE</td><td><span class="tag p">Sem retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Daniel dos Santos Cardoso</td><td>Base por CNAE</td><td><span class="tag p">Contato inválido</span></td><td>Marcado como inválido após o 1º contato, sem anotação</td></tr>
+</tbody></table></div>
+
+<footer>"Respondeu" soma o ganho e quem deu um motivo de recusa ou entrou em negociação antes de parar de responder. A contagem de "Respondeu" no funil considera só os 30 cards da base; o card do Braga (indicação) entra nos totais e nos motivos. Cada fotógrafo foi contado uma vez: os 31 cards têm 31 telefones diferentes e não há card duplicado. "Campos do Jordão" inclui quem tem a cidade no campo de atuação do card. Horários de Brasília; as anotações são da Wânia.</footer>
+</main></body></html>

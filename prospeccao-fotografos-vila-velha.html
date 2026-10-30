@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fotógrafos em Vila Velha</title>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#080E32;--surf:#0F1742;--surf2:#18225A;
+  --line:#232E6B;--ink:#EEF1FB;--ink2:#B4BBD9;--ink3:#8189B0;
+  --won:oklch(78% .12 150);--lost:oklch(72% .13 30);--amber:oklch(82% .13 80);--blue:#4D85FF;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Figtree",sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:880px;margin:0 auto;padding:56px 16px 96px}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);font-weight:700}
+h1{font-family:"Figtree",sans-serif;font-weight:800;font-size:clamp(34px,6.5vw,56px);letter-spacing:-.03em;line-height:1;margin:14px 0 14px}
+h2{font-family:"Figtree",sans-serif;font-weight:600;font-size:24px;letter-spacing:-.015em;margin:64px 0 6px}
+.lede{color:var(--ink2);font-size:18px;max-width:60ch;margin:0}
+.meta{color:var(--ink3);font-size:13.5px;margin-top:18px}
+p{max-width:66ch}
+.sub{color:var(--ink2);margin:0 0 22px}
+
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:40px}
+.nums div{background:var(--surf);padding:22px 20px}
+.nums b{display:block;font-family:"Figtree",sans-serif;font-size:44px;font-weight:800;line-height:1;letter-spacing:-.03em}
+.nums span{display:block;color:var(--ink2);font-size:13.5px;margin-top:8px;max-width:20ch}
+.nums .w b{color:var(--won)} .nums .l b{color:var(--lost)} .nums .a b{color:var(--amber)}
+
+.funnel{display:flex;flex-direction:column;gap:10px}
+.step{display:grid;grid-template-columns:190px 1fr 44px;align-items:center;gap:14px}
+.step .t{font-size:14.5px;color:var(--ink2)}
+.step .bar{height:26px;border-radius:6px;background:var(--surf2);overflow:hidden}
+.step .bar i{display:block;height:100%;background:var(--blue);border-radius:6px}
+.step .n{font-weight:700;text-align:right;font-variant-numeric:tabular-nums}
+.step.win .bar i{background:var(--won)}
+.step.neg .bar i{background:var(--won);opacity:.55}
+
+.reasons{border-top:1px solid var(--line)}
+.r{display:grid;grid-template-columns:34px 1fr;gap:6px 18px;padding:20px 0;border-bottom:1px solid var(--line)}
+.r .c{font-family:"Figtree",sans-serif;font-size:30px;font-weight:800;line-height:1;color:var(--lost);font-variant-numeric:tabular-nums}
+.r h3{margin:0;font-size:17px;font-weight:700}
+.r h3 small{color:var(--ink3);font-weight:500;font-size:13.5px;margin-left:8px}
+.r p{grid-column:2;margin:4px 0 0;color:var(--ink2);font-size:15px}
+.r .who{grid-column:2;color:var(--ink3);font-size:13.5px;margin-top:6px}
+.meter{grid-column:2;height:6px;background:var(--surf2);border-radius:3px;overflow:hidden;margin-top:4px}
+.meter i{display:block;height:100%;background:var(--lost)}
+
+blockquote{margin:22px 0;padding:20px 22px;background:var(--surf);border-radius:12px;color:var(--ink);font-size:16.5px;line-height:1.55}
+blockquote cite{display:block;margin-top:10px;color:var(--ink3);font-style:normal;font-size:13.5px}
+
+.won{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.won div{background:var(--surf);border-radius:12px;padding:20px}
+.won h3{margin:0 0 4px;font-size:17px;color:var(--won)}
+.won p{margin:0;color:var(--ink2);font-size:14.5px}
+
+.concl{background:var(--surf);border-radius:16px;padding:28px 26px;margin-top:18px}
+.concl p{margin:0 0 14px;color:var(--ink)}
+.concl p:last-child{margin:0}
+.concl ol{margin:6px 0 14px;padding-left:20px;color:var(--ink2)}
+.concl li{margin:8px 0}
+.concl li b{color:var(--ink)}
+
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:14px}
+th{text-align:left;color:var(--ink3);font-weight:500;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:12px 14px;background:var(--surf)}
+td{padding:12px 14px;border-top:1px solid var(--line);vertical-align:top;color:var(--ink2)}
+td:first-child{color:var(--ink);font-weight:500}
+.tag{display:inline-block;padding:2px 10px;border-radius:999px;font-size:12px;font-weight:700;white-space:nowrap}
+.tag.g{background:oklch(78% .12 150 / .16);color:var(--won)}
+.tag.a{background:oklch(80% .13 80 / .16);color:var(--amber)}
+.tag.p{background:oklch(70% .13 35 / .16);color:var(--lost)}
+.flag{color:var(--amber)}
+.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.dim{color:var(--ink3)}
+footer{margin-top:56px;color:var(--ink3);font-size:13px}
+
+@media (max-width:640px){
+  .nums{grid-template-columns:1fr 1fr}
+  .step{grid-template-columns:1fr 40px}
+  .step .t{grid-column:1/-1}
+  .won{grid-template-columns:1fr}
+}
+
+.tl{border-left:2px solid var(--line);margin:8px 0 0 6px;padding-left:22px}
+.tl div{position:relative;padding:0 0 22px}
+.tl div:before{content:"";position:absolute;left:-29px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--blue)}
+.tl div.g:before{background:var(--won)} .tl div.p:before{background:var(--lost)}
+.tl b{display:block;font-size:13px;color:var(--ink3);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+.tl p{margin:2px 0 0;color:var(--ink2);font-size:15px}
+.tl p strong{color:var(--ink)}
+.badge{display:inline-block;margin-top:22px;padding:6px 14px;border-radius:999px;background:oklch(78% .12 150 / .14);color:var(--won);font-size:13px;font-weight:700}
+</style></head><body><main>
+<span class="eyebrow">Prospecção de Fornecedores · Fotógrafos · ES</span>
+<h1>Prospecção Fotógrafos Vila Velha</h1>
+<p class="lede">63 cards de fotógrafos em Vila Velha, em três rodadas de criação (13/10, 27/10 e 29/10). Houve 1 ganho (Tiago Miranda Porfirio, cadastrado no Painel de fotografia), 44 perdidos e 18 ainda abertos. O motivo de perda mais comum foi Sem Retorno (27), seguido de Sem Equipamento (12).</p>
+<p class="meta">Fonte: Pipedrive, funil 60 "Prospecção Fornecedores" · cards criados em 30 em 13/10 e 1 em 20/10 e 30 em 27/10 e 2 em 29/10 · motivos de perda e anotações de cada card · atualizado em 30/10/2026 · telefones corrigidos (faltava o 9) em 28/10</p>
+<div class="nums">
+  <div><b>63</b><span>fotógrafos no funil</span></div>
+  <div class="w"><b>1</b><span>ganhos</span></div>
+  <div class="l"><b>44</b><span>perdidos</span></div>
+  <div class="a"><b>18</b><span>em aberto</span></div>
+</div>
+<h2>Como o agente trabalhou</h2>
+<p class="sub">Datas tiradas das anotações de cada card. Horários de Brasília.</p>
+<div class="tl">
+  <div class=""><b>13/10 · Cards criados</b><p>30 fotógrafos entram no Backlog</p></div>
+  <div class=""><b>14/10 · 1º contato</b><p>30 em 14/10; 30 em 28/10</p></div>
+  <div class=""><b>15/10 · 2º contato</b><p>25 em 15/10; 17 em 29/10</p></div>
+  <div class=""><b>16/10 · Último contato</b><p>22 em 16/10</p></div>
+  <div class="p"><b>19/10 · Encerramento</b><p>o agente marca 22 cards sem retorno como Perdidos</p></div>
+  <div class=""><b>20/10 · Cards criados</b><p>1 fotógrafos entram no Backlog</p></div>
+  <div class=""><b>27/10 · Cards criados</b><p>30 fotógrafos entram no Backlog</p></div>
+  <div class=""><b>29/10 · Cards criados</b><p>2 fotógrafos entram no Backlog</p></div>
+  <div class="g"><b>30/10 · Ganho</b><p>Tiago Miranda Porfirio</p></div>
+</div>
+<h2>Lead time da prospecção</h2>
+<p class="sub">Da criação dos cards até o último ter resultado. Dias corridos.</p>
+<div class="nums">
+  <div class="a"><b>17d 3h</b><span>da primeira criação ao último resultado</span></div>
+  <div><b>4.7 d</b><span>médio por card, da criação ao resultado</span></div>
+</div>
+<h2>Do contato ao cadastro</h2>
+<p class="sub">Contado por card; os 63 telefones são distintos.</p>
+<div class="funnel">
+  <div class="step "><span class="t">Recebeu o 1º contato</span><span class="bar"><i style="width:95.2%"></i></span><span class="n">60</span></div>
+  <div class="step "><span class="t">Recebeu o 2º contato</span><span class="bar"><i style="width:66.7%"></i></span><span class="n">42</span></div>
+  <div class="step "><span class="t">Recebeu o último contato</span><span class="bar"><i style="width:34.9%"></i></span><span class="n">22</span></div>
+  <div class="step "><span class="t">Respondeu</span><span class="bar"><i style="width:27.0%"></i></span><span class="n">17</span></div>
+  <div class="step win"><span class="t">Ganho</span><span class="bar"><i style="width:1.6%"></i></span><span class="n">1</span></div>
+</div>
+<h2>Por que perdemos</h2>
+<p class="sub">Motivo de perda registrado no card. O Pipedrive não guarda o texto das respostas, só o motivo.</p>
+<div class="reasons">
+  <div class="r"><span class="c">12</span><h3>Sem Equipamento<small>27,3% dos perdidos</small></h3>
+    <div class="meter"><i style="width:27.3%"></i></div>
+    <p>12 cards. Há uma nota manual de que um prestador só tem iPhone (New Age Produtora). O Pipedrive não traz as demais respostas.</p>
+    <span class="who">Alexandre Costa · Alto Padrao Formaturas · Dutra Fotografias · Gabriel Valente Ribeiro Muniz · Helber · Kissila Suellem Nascimento · Leandro Marchesi Fotografias · New Age Produtora · Primeiro Mar - The Barn · Rafael Valadares Pinheiro · Studio Pac · Vix Photos</span></div>
+  <div class="r"><span class="c">1</span><h3>Contato Inválido<small>2,3% dos perdidos</small></h3>
+    <div class="meter"><i style="width:2.3%"></i></div>
+    <p>1 card (Mariana Conrado Domingos Mayer). A nota do card diz que ela enviou outro contato e foi feito um novo card, então o motivo pode não refletir falta de resposta.</p>
+    <span class="who">Mariana Conrado Domingos Mayer</span></div>
+  <div class="r"><span class="c">2</span><h3>Parou de Responder<small>4,5% dos perdidos</small></h3>
+    <div class="meter"><i style="width:4.5%"></i></div>
+    <p>2 cards marcados com este motivo.</p>
+    <span class="who">Higor Luiz · Mogno</span></div>
+  <div class="r"><span class="c">27</span><h3>Sem Retorno<small>61,4% dos perdidos</small></h3>
+    <div class="meter"><i style="width:61.4%"></i></div>
+    <p>Maior grupo. 5 cards foram encerrados por sem retorno com apenas o 1º contato (Richard Patricio, Bruna Amora, Frame Foto Arte, Pix Fotografia, Dimensão Fotografia). Vale conferir se houve 2º contato antes de encerrar.</p>
+    <span class="who">A Sarah Faz Fotos · Aguiar Fotografias · Aline Godinho Valadares · Bruna Amora · Castilho&amp;souza · Charles Teodoro Dias · Dimensão Fotografia · Duartestudio · Estudio Raio de Sol · Frame Foto Arte · Imagens da Natureza · Israel Oliveira Araujo · e mais 15 (todos na tabela no fim)</span></div>
+  <div class="r"><span class="c">1</span><h3>Não Trabalha com fotos de imóveis<small>2,3% dos perdidos</small></h3>
+    <div class="meter"><i style="width:2.3%"></i></div>
+    <p>1 cards marcados com este motivo.</p>
+    <span class="who">Eternita Foto e Filme</span></div>
+  <div class="r"><span class="c">1</span><h3>Duplicado/Erro<small>2,3% dos perdidos</small></h3>
+    <div class="meter"><i style="width:2.3%"></i></div>
+    <p>1 cards marcados com este motivo.</p>
+    <span class="who">Jose maria de alencar</span></div>
+</div>
+<h2>De onde vieram</h2>
+<p class="sub">Origem lida do bloco Encontrado das observações. A amostra de Indicação é de 1 card, então não dá para comparar.</p>
+<div class="tbl"><table>
+<thead><tr><th>Origem</th><th class="num">Cards</th><th class="num">Responderam</th><th class="num">Ganhos</th><th class="num">Taxa de resposta</th></tr></thead>
+<tbody>
+<tr><td>Pesquisa web</td><td class="num">46</td><td class="num">13</td><td class="num">1</td><td class="num">28,3%</td></tr>
+<tr><td>Base por CNAE</td><td class="num">16</td><td class="num">3</td><td class="num">0</td><td class="num">18,8%</td></tr>
+<tr><td>Indicação (SIA)</td><td class="num">1</td><td class="num">1</td><td class="num">0</td><td class="num">100,0%</td></tr>
+</tbody></table></div>
+<h2>Quem entrou</h2>
+<div class="won">
+  <div><h3>Tiago Miranda Porfirio</h3><p>Veio da Base por CNAE (Receita), com nicho ainda a confirmar no contato. A nota do card registra cadastro no Painel de fotografia.</p></div>
+</div>
+<h2>Como melhorar a próxima rodada</h2>
+<div class="concl">
+  <p><b>O que mais pesou:</b> 27 de 44 perdas foram por falta de retorno e 54 de 63 cards ainda estão com o nicho como 'A confirmar'. A Seazone quer foto interna do imóvel, então o nicho define se o contato vale a pena.</p>
+  <ol><li><b>Fazer o 2º contato antes de encerrar.</b> 5 cards foram perdidos por sem retorno só com o 1º contato.</li><li><b>Confirmar o nicho na primeira conversa.</b> Só 1 card está marcado como Imobiliário; 3 são Casamento e 2 Corporativo, que fotografam menos interiores.</li><li><b>Conferir duplicados.</b> O card 528989 (Mariana Mayer Fotografia) tem a nota de possível duplicado do 527977; o 521643 foi perdido como Duplicado/Erro.</li><li><b>Registrar a resposta no card.</b> Hoje não dá para separar recusa por valor de recusa por equipamento sem abrir a SIA.</li></ol>
+  <p>18 cards seguem abertos. O Pipedrive não tem valor cobrado nem objeções; essas informações só entram se o time trouxer.</p>
+</div>
+<h2>Todos os cards</h2>
+<div class="tbl"><table>
+<thead><tr><th>Nome</th><th>Origem</th><th>Nicho / tipo</th><th>Resultado</th><th>Anotação</th></tr></thead>
+<tbody>
+<tr><td>Tiago Miranda Porfirio</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag g">Ganho</span></td><td>Telefone corrigido (faltava o 9); Cadastrado no Painel de fotografia</td></tr>
+<tr><td>Aline</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag a">Em aberto</span></td><td>Telefone corrigido (faltava o 9)</td></tr>
+<tr><td>Amanda Paraizo da Silva Menezes</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag a">Em aberto</span></td><td>Telefone corrigido (faltava o 9)</td></tr>
+<tr><td>Breciane Fotografias</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag a">Em aberto</span></td><td>Telefone corrigido (faltava o 9)</td></tr>
+<tr><td>Catarine Bravin Fotografia</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag a">Em aberto</span></td><td>Telefone corrigido (faltava o 9)</td></tr>
+<tr><td>Charlene Lima Fotografia</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag a">Em aberto</span></td><td>Recebeu 2 contatos</td></tr>
+<tr><td>Janice de Freitas Delunardo</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag a">Em aberto</span></td><td>Telefone corrigido (faltava o 9)</td></tr>
+<tr><td>Juliana Cavalcante Coutinho</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag a">Em aberto</span></td><td>Telefone corrigido (faltava o 9)</td></tr>
+<tr><td>Lais Ferreira Lorenzoni</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag a">Em aberto</span></td><td>Telefone corrigido (faltava o 9)</td></tr>
+<tr><td>Laysa Maruf Loyola</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag a">Em aberto</span></td><td>Telefone corrigido (faltava o 9)</td></tr>
+<tr><td>Mariana Mayer Fotografia</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag a">Em aberto</span></td><td>Recebeu nenhum contato</td></tr>
+<tr><td>Mariana Pires Fotografia</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag a">Em aberto</span></td><td>Telefone corrigido (faltava o 9)</td></tr>
+<tr><td>Maykon Fontoura Campanharo</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag a">Em aberto</span></td><td>Telefone corrigido (faltava o 9)</td></tr>
+<tr><td>NP Networking (Luiz)</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag a">Em aberto</span></td><td>Recebeu nenhum contato</td></tr>
+<tr><td>Natassia Ferreira Augusto</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag a">Em aberto</span></td><td>Telefone corrigido (faltava o 9)</td></tr>
+<tr><td>Studio e Cia Eventos</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag a">Em aberto</span></td><td>Telefone corrigido (faltava o 9)</td></tr>
+<tr><td>Thamiris Ricarto Marques Simon</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag a">Em aberto</span></td><td>Telefone corrigido (faltava o 9)</td></tr>
+<tr><td>Vitor Ayala Sarmento</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag a">Em aberto</span></td><td>Telefone corrigido (faltava o 9)</td></tr>
+<tr><td>Viviane Azevedo de Souza</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag a">Em aberto</span></td><td>Telefone corrigido (faltava o 9)</td></tr>
+<tr><td>Alexandre Costa</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag p">Sem Equipamento</span></td><td>Recebeu 2 contatos</td></tr>
+<tr><td>Alto Padrao Formaturas</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag p">Sem Equipamento</span></td><td>Telefone corrigido (faltava o 9)</td></tr>
+<tr><td>Dutra Fotografias</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag p">Sem Equipamento</span></td><td>Telefone corrigido (faltava o 9)</td></tr>
+<tr><td>Gabriel Valente Ribeiro Muniz</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag p">Sem Equipamento</span></td><td>Telefone corrigido (faltava o 9)</td></tr>
+<tr><td>Helber</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag p">Sem Equipamento</span></td><td>Telefone corrigido (faltava o 9)</td></tr>
+<tr><td>Kissila Suellem Nascimento</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag p">Sem Equipamento</span></td><td>Telefone corrigido (faltava o 9)</td></tr>
+<tr><td>Leandro Marchesi Fotografias</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag p">Sem Equipamento</span></td><td>Recebeu o 1º contato</td></tr>
+<tr><td>New Age Produtora</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag p">Sem Equipamento</span></td><td>Telefone corrigido (faltava o 9); Só tem iPhone</td></tr>
+<tr><td>Primeiro Mar - The Barn</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag p">Sem Equipamento</span></td><td>Telefone corrigido (faltava o 9)</td></tr>
+<tr><td>Rafael Valadares Pinheiro</td><td>Pesquisa web</td><td>Drone/Aérea</td><td><span class="tag p">Sem Equipamento</span></td><td>Telefone corrigido (faltava o 9)</td></tr>
+<tr><td>Studio Pac</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag p">Sem Equipamento</span></td><td>Telefone corrigido (faltava o 9)</td></tr>
+<tr><td>Vix Photos</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Equipamento</span></td><td>Recebeu 2 contatos</td></tr>
+<tr><td>Mariana Conrado Domingos Mayer</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag p">Contato Inválido</span></td><td>Telefone corrigido (faltava o 9); Enviou outro contato e foi feito novo card</td></tr>
+<tr><td>Higor Luiz</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Parou de Responder</span></td><td>Recebeu 2 contatos</td></tr>
+<tr><td>Mogno</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag p">Parou de Responder</span></td><td>Telefone corrigido (faltava o 9)</td></tr>
+<tr><td>A Sarah Faz Fotos</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Aguiar Fotografias</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Aline Godinho Valadares</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Bruna Amora</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu o 1º contato</td></tr>
+<tr><td>Castilho&amp;souza</td><td>Pesquisa web</td><td>Drone/Aérea</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Charles Teodoro Dias</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Dimensão Fotografia</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu o 1º contato</td></tr>
+<tr><td>Duartestudio</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Estudio Raio de Sol</td><td>Pesquisa web</td><td>Casamento</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Frame Foto Arte</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu o 1º contato</td></tr>
+<tr><td>Imagens da Natureza</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Israel Oliveira Araujo</td><td>Pesquisa web</td><td>Corporativo</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Jl Fotografias</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Juliana e Fagner</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Junior Brunow</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Kelen Cristina</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Mar de Fotos</td><td>Pesquisa web</td><td>Casamento</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Montes Fotografia</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Pix Fotografia</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu o 1º contato</td></tr>
+<tr><td>Ponto</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Raphael Garcia de Andrade</td><td>Pesquisa web</td><td>Casamento</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Richard Patricio</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu o 1º contato</td></tr>
+<tr><td>Spotlight Stuff</td><td>Pesquisa web</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Studio JAMC</td><td>Pesquisa web</td><td>Imobiliário</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Tbstudios (Thiago Bruno Sousa)</td><td>Pesquisa web</td><td>Corporativo</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Tdv Servicos e Comercio</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Usinadafoto</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos</td></tr>
+<tr><td>Eternita Foto e Filme</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Não Trabalha com fotos de imóveis</span></td><td>Recebeu o 1º contato</td></tr>
+<tr><td>Jose maria de alencar</td><td>Indicação (SIA)</td><td>-</td><td><span class="tag p">Duplicado/Erro</span></td><td>Recebeu nenhum contato</td></tr>
+</tbody></table></div>
+<footer>"Respondeu" soma o ganho e quem tem motivo de perda diferente de sem retorno e contato inválido (mais os cards listados na narrativa). As respostas em si não estão no Pipedrive; a contagem se baseia em motivo de perda e anotações. Horários de Brasília. Dados lidos do Pipedrive (funil Prospecção Fornecedores) em 30/10/2026. Sem telefones nem e-mails.</footer>
+</main></body></html>

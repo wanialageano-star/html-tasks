@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fotógrafos em Uberlândia</title>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#080E32;--surf:#0F1742;--surf2:#18225A;
+  --line:#232E6B;--ink:#EEF1FB;--ink2:#B4BBD9;--ink3:#8189B0;
+  --won:oklch(78% .12 150);--lost:oklch(72% .13 30);--amber:oklch(82% .13 80);--blue:#4D85FF;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Figtree",sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:880px;margin:0 auto;padding:56px 16px 96px}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);font-weight:700}
+h1{font-family:"Figtree",sans-serif;font-weight:800;font-size:clamp(34px,6.5vw,56px);letter-spacing:-.03em;line-height:1;margin:14px 0 14px}
+h2{font-family:"Figtree",sans-serif;font-weight:600;font-size:24px;letter-spacing:-.015em;margin:64px 0 6px}
+.lede{color:var(--ink2);font-size:18px;max-width:60ch;margin:0}
+.meta{color:var(--ink3);font-size:13.5px;margin-top:18px}
+p{max-width:66ch}
+.sub{color:var(--ink2);margin:0 0 22px}
+
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:40px}
+.nums div{background:var(--surf);padding:22px 20px}
+.nums b{display:block;font-family:"Figtree",sans-serif;font-size:44px;font-weight:800;line-height:1;letter-spacing:-.03em}
+.nums span{display:block;color:var(--ink2);font-size:13.5px;margin-top:8px;max-width:20ch}
+.nums .w b{color:var(--won)} .nums .l b{color:var(--lost)} .nums .a b{color:var(--amber)}
+
+.funnel{display:flex;flex-direction:column;gap:10px}
+.step{display:grid;grid-template-columns:190px 1fr 44px;align-items:center;gap:14px}
+.step .t{font-size:14.5px;color:var(--ink2)}
+.step .bar{height:26px;border-radius:6px;background:var(--surf2);overflow:hidden}
+.step .bar i{display:block;height:100%;background:var(--blue);border-radius:6px}
+.step .n{font-weight:700;text-align:right;font-variant-numeric:tabular-nums}
+.step.win .bar i{background:var(--won)}
+.step.neg .bar i{background:var(--won);opacity:.55}
+
+.reasons{border-top:1px solid var(--line)}
+.r{display:grid;grid-template-columns:34px 1fr;gap:6px 18px;padding:20px 0;border-bottom:1px solid var(--line)}
+.r .c{font-family:"Figtree",sans-serif;font-size:30px;font-weight:800;line-height:1;color:var(--lost);font-variant-numeric:tabular-nums}
+.r h3{margin:0;font-size:17px;font-weight:700}
+.r h3 small{color:var(--ink3);font-weight:500;font-size:13.5px;margin-left:8px}
+.r p{grid-column:2;margin:4px 0 0;color:var(--ink2);font-size:15px}
+.r .who{grid-column:2;color:var(--ink3);font-size:13.5px;margin-top:6px}
+.meter{grid-column:2;height:6px;background:var(--surf2);border-radius:3px;overflow:hidden;margin-top:4px}
+.meter i{display:block;height:100%;background:var(--lost)}
+
+blockquote{margin:22px 0;padding:20px 22px;background:var(--surf);border-radius:12px;color:var(--ink);font-size:16.5px;line-height:1.55}
+blockquote cite{display:block;margin-top:10px;color:var(--ink3);font-style:normal;font-size:13.5px}
+
+.won{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.won div{background:var(--surf);border-radius:12px;padding:20px}
+.won h3{margin:0 0 4px;font-size:17px;color:var(--won)}
+.won p{margin:0;color:var(--ink2);font-size:14.5px}
+
+.concl{background:var(--surf);border-radius:16px;padding:28px 26px;margin-top:18px}
+.concl p{margin:0 0 14px;color:var(--ink)}
+.concl p:last-child{margin:0}
+.concl ol{margin:6px 0 14px;padding-left:20px;color:var(--ink2)}
+.concl li{margin:8px 0}
+.concl li b{color:var(--ink)}
+
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:14px}
+th{text-align:left;color:var(--ink3);font-weight:500;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:12px 14px;background:var(--surf)}
+td{padding:12px 14px;border-top:1px solid var(--line);vertical-align:top;color:var(--ink2)}
+td:first-child{color:var(--ink);font-weight:500}
+.tag{display:inline-block;padding:2px 10px;border-radius:999px;font-size:12px;font-weight:700;white-space:nowrap}
+.tag.g{background:oklch(78% .12 150 / .16);color:var(--won)}
+.tag.a{background:oklch(80% .13 80 / .16);color:var(--amber)}
+.tag.p{background:oklch(70% .13 35 / .16);color:var(--lost)}
+.flag{color:var(--amber)}
+.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.dim{color:var(--ink3)}
+footer{margin-top:56px;color:var(--ink3);font-size:13px}
+
+@media (max-width:640px){
+  .nums{grid-template-columns:1fr 1fr}
+  .step{grid-template-columns:1fr 40px}
+  .step .t{grid-column:1/-1}
+  .won{grid-template-columns:1fr}
+}
+
+.tl{border-left:2px solid var(--line);margin:8px 0 0 6px;padding-left:22px}
+.tl div{position:relative;padding:0 0 22px}
+.tl div:before{content:"";position:absolute;left:-29px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--blue)}
+.tl div.g:before{background:var(--won)} .tl div.p:before{background:var(--lost)}
+.tl b{display:block;font-size:13px;color:var(--ink3);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+.tl p{margin:2px 0 0;color:var(--ink2);font-size:15px}
+.tl p strong{color:var(--ink)}
+.badge{display:inline-block;margin-top:22px;padding:6px 14px;border-radius:999px;background:oklch(78% .12 150 / .14);color:var(--won);font-size:13px;font-weight:700}
+</style>
+</head><body><main>
+<span class="eyebrow">Prospecção de Fornecedores · Fotógrafos · MG</span>
+<h1>Prospecção Fotógrafos Uberlândia</h1>
+<p class="lede">31 fotógrafos procurados em Uberlândia (25 da base da Receita, 5 achados por pesquisa na web e 1 indicado durante uma conversa) e 1 ganho. Só 5 deram algum sinal de vida; os outros 26 foram encerrados como sem retorno. A única conversão veio de quem foi pesquisado antes de virar card.</p>
+<p class="meta">Fonte: Pipedrive, funil 60 "Prospecção Fornecedores" · 31 cards criados em 27/10/2026 · cadência do agente entre 27/10 e 30/10 · motivos de perda e anotações de cada card · atualizado em 30/10/2026</p>
+<div class="nums">
+  <div><b>31</b><span>fotógrafos procurados</span></div>
+  <div class="w"><b>1</b><span>ganho, em 27/10</span></div>
+  <div class="l"><b>30</b><span>perdidos</span></div>
+  <div class="a"><b>0</b><span>em aberto</span></div>
+</div>
+<h2>Do contato ao cadastro</h2>
+<p class="sub">Todos os cards receberam o 1º contato em 27/10 (12h ou 15h). A cadência é de um contato por dia: 2º em 28/10, último em 29/10 e encerramento como sem retorno em 30/10. As anotações do Pipedrive só registram o envio, não o texto das respostas.</p>
+<div class="funnel">
+<div class="step "><span class="t">Recebeu o 1º contato</span><span class="bar"><i style="width:100.0%"></i></span><span class="n">31</span></div>
+<div class="step "><span class="t">Recebeu o 2º contato</span><span class="bar"><i style="width:74.2%"></i></span><span class="n">23</span></div>
+<div class="step "><span class="t">Recebeu o último contato</span><span class="bar"><i style="width:71.0%"></i></span><span class="n">22</span></div>
+<div class="step "><span class="t">Respondeu</span><span class="bar"><i style="width:16.1%"></i></span><span class="n">5</span></div>
+<div class="step win"><span class="t">Ganho</span><span class="bar"><i style="width:3.2%"></i></span><span class="n">1</span></div>
+</div>
+<h2>Por que perdemos</h2>
+<p class="sub">Os 30 perdidos, por motivo marcado no Pipedrive, com a explicação tirada das anotações de cada card.</p>
+<div class="reasons">
+<div class="r"><span class="c">26</span><h3>Sem retorno<small>86,7% dos perdidos</small></h3><div class="meter"><i style="width:86.7%"></i></div><p>22 receberam os três contatos e foram encerrados pelo agente em 30/10. Outros 4 foram marcados como perdidos em 28/10 com só o 1º contato registrado, sem anotação do motivo: pode ser encerramento manual ou falha na cadência, vale conferir.</p><span class="who">A1 Filmes · Alvaro Silva Fotografias · Atual Producoes · C Forme Fotografias · Costa Valle · Daniel Cavalari Fotografias · Digitalmaster · Eliezer Fotografias · Every Servicos Fotograficos · Farys Meirelles · Flash Formaturas e Eventos · Formed · Imagens do Brasil · John Weslley Fotografias · Kaká · Lama-mg · Mazzutti Photo (Italvino Mazzutti) · Murilo Araújo · Picblu - Design de Albuns e Produtos Fotograficos · Rizza Creative · Roberto Chacur Studio Fotografico · Santiago Producoes · Studio A Fotografias · Studio Nakazato Business · Studioi9acao · Thiago Mesquita Fotografia</span></div>
+<div class="r"><span class="c">2</span><h3>Parou de responder<small>6,7% dos perdidos</small></h3><div class="meter"><i style="width:6.7%"></i></div><p>Os dois responderam e depois sumiram, e foram marcados como perdidos em 30/10, antes de a cadência terminar. Nenhum dos dois tem nicho, Instagram ou site no card.</p><span class="who">Camila Pajuaba Registro Fotografico · Leandro Souza Estudio (Leandro Silva Souza)</span></div>
+<div class="r"><span class="c">1</span><h3>Sem equipamento<small>3,3% dos perdidos</small></h3><div class="meter"><i style="width:3.3%"></i></div><p>Respondeu logo ao 1º contato. É a fotógrafa de corporativo, publicidade, eventos e decoração (24 anos de mercado) e não tem o equipamento necessário.</p><span class="who">Luciana Santos</span></div>
+<div class="r"><span class="c">1</span><h3>Contato inválido<small>3,3% dos perdidos</small></h3><div class="meter"><i style="width:3.3%"></i></div><p>A anotação diz que enviaram outro contato para falar com o Kaká, "já cadastrado no Pipe". O SIA Copiloto criou o card "Kaká" a partir dessa indicação, e ele foi perdido por sem retorno em 28/10.</p><span class="who">Kaká Fotografias</span></div>
+</div>
+<h2>De onde vieram</h2>
+<p class="sub">Nenhum fotógrafo desta base foi marcado como "não faz foto de imóvel" nem por valor, o que mostra que a maioria nem chegou a conversar.</p>
+<div class="tbl"><table>
+<thead><tr><th>Origem</th><th class="num">Fotógrafos</th><th class="num">Responderam</th><th class="num">Ganho</th><th class="num">Taxa de resposta</th></tr></thead>
+<tbody>
+<tr><td>Base por CNAE (nicho "A confirmar")</td><td class="num">25</td><td class="num">2</td><td class="num">0</td><td class="num">8,0%</td></tr>
+<tr><td>Pesquisa web e indicação (com Instagram, site ou nicho)</td><td class="num">6</td><td class="num">3</td><td class="num">1</td><td class="num">50,0%</td></tr>
+</tbody></table></div>
+<h2>Quem entrou</h2>
+<div class="won">
+  <div><h3>Foto Imobi (Anderson)</h3><p>Achado por Google e site próprio. Nicho Imobiliário + Arquitetura: arquitetura, interiores, imóveis e Airbnb, com mais de 10 anos de mercado, e também atende São Paulo. Foi cadastrado no Painel de Fotógrafos em 27/10, o mesmo dia do 1º contato.</p></div>
+  <div><h3>Perfil que funcionou</h3><p>Foi o único card com nicho Imobiliário + Arquitetura, o que a Seazone mais procura (foto interna do imóvel). Dos cinco cards pesquisados na web, os outros quatro eram Corporativo (1) e Casamento (3).</p></div>
+</div>
+<h2>Como melhorar a próxima rodada</h2>
+<div class="concl">
+  <p><b>O que mais pesou foi o sem retorno: 26 de 30 perdidos.</b> 25 dos 31 cards vieram só da Receita, sem Instagram, site ou nicho, e apenas 2 responderam.</p>
+  <ol>
+    <li><b>Pesquisar o nicho antes de criar o card.</b> 3 dos 6 cards pesquisados na web responderam, contra 2 dos 25 da base. A amostra é pequena, mas aponta o caminho: priorizar Instagram e site de quem mostra imóvel, arquitetura ou interiores.</li>
+    <li><b>Procurar mais fotógrafo de imóvel na cidade.</b> Só 1 card tinha nicho imobiliário. Os demais pesquisados eram de casamento (3) e corporativo (1), grupos que a skill coloca depois de imobiliário, arquitetura e interiores.</li>
+    <li><b>Conferir os 4 cards encerrados cedo.</b> Formed, Studioi9acao, Farys Meirelles e Kaká (indicação) viraram "sem retorno" em 28/10 com só o 1º contato. Se foi falha de cadência, esses telefones merecem nova tentativa.</li>
+    <li><b>Não encerrar à mão antes do fim da cadência.</b> Camila Pajuaba e Leandro Silva Souza responderam, foram marcados como "parou de responder" e nunca tiveram o motivo anotado. Vale perguntar se algum faz foto de imóvel.</li>
+    <li><b>Conferir o card "Kaká".</b> A anotação do Kaká Fotografias diz que o Kaká já estava cadastrado no Pipe, mas o SIA Copiloto criou um card novo. Vale checar se não é duplicado.</li>
+  </ol>
+  <p>Nenhum card ficou em aberto: com a cadência encerrada em 30/10, a próxima rodada deve rodar o <code>dedupe</code> contra o funil inteiro e subir o lote seguinte, pesquisando antes de criar.</p>
+</div>
+<h2>Todos os fotógrafos</h2>
+<div class="tbl"><table>
+<thead><tr><th>Fotógrafo</th><th>Origem</th><th>Nicho</th><th>Resultado</th><th>Anotação</th></tr></thead>
+<tbody>
+<tr><td>Foto Imobi (Anderson)</td><td>Pesquisa web (Google, site próprio)</td><td>Imobiliário + Arquitetura</td><td><span class="tag g">Ganho</span></td><td>Cadastrado no Painel de Fotógrafos em 27/10</td></tr>
+<tr><td>Luciana Santos</td><td>Pesquisa web (Google, site próprio)</td><td>Corporativo</td><td><span class="tag p">Sem Equipamento</span></td><td>Respondeu; perdido em 27/10 por falta de equipamento</td></tr>
+<tr><td>Kaká Fotografias</td><td>Pesquisa web (ProcurôAchô, Google)</td><td>Casamento</td><td><span class="tag p">Contato Inválido</span></td><td>Passou outro contato para falar com o Kaká (indicação); marcado inválido em 27/10</td></tr>
+<tr><td>Camila Pajuaba Registro Fotografico</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Parou de Responder</span></td><td>Respondeu e depois parou; marcado como perdido em 30/10, antes de fechar a cadência (2º contato enviado)</td></tr>
+<tr><td>Leandro Souza Estudio (Leandro Silva Souza)</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Parou de Responder</span></td><td>Respondeu e depois parou; marcado como perdido em 30/10, antes de fechar a cadência (1º contato enviado)</td></tr>
+<tr><td>A1 Filmes</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos; encerrado pelo agente em 30/10</td></tr>
+<tr><td>Alvaro Silva Fotografias</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos; encerrado pelo agente em 30/10</td></tr>
+<tr><td>Atual Producoes</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos; encerrado pelo agente em 30/10</td></tr>
+<tr><td>C Forme Fotografias</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos; encerrado pelo agente em 30/10</td></tr>
+<tr><td>Costa Valle</td><td>Pesquisa web (Google, site próprio)</td><td>Casamento</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos; encerrado pelo agente em 30/10</td></tr>
+<tr><td>Daniel Cavalari Fotografias</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos; encerrado pelo agente em 30/10</td></tr>
+<tr><td>Digitalmaster</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos; encerrado pelo agente em 30/10</td></tr>
+<tr><td>Eliezer Fotografias</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos; encerrado pelo agente em 30/10</td></tr>
+<tr><td>Every Servicos Fotograficos</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos; encerrado pelo agente em 30/10</td></tr>
+<tr><td>Farys Meirelles</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Perdido em 28/10 com só o 1º contato registrado</td></tr>
+<tr><td>Flash Formaturas e Eventos</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos; encerrado pelo agente em 30/10</td></tr>
+<tr><td>Formed</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Perdido em 28/10 com só o 1º contato registrado</td></tr>
+<tr><td>Imagens do Brasil</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos; encerrado pelo agente em 30/10</td></tr>
+<tr><td>John Weslley Fotografias</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos; encerrado pelo agente em 30/10</td></tr>
+<tr><td>Kaká</td><td>Indicação (SIA)</td><td>-</td><td><span class="tag p">Sem Retorno</span></td><td>Perdido em 28/10 com só o 1º contato registrado</td></tr>
+<tr><td>Lama-mg</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos; encerrado pelo agente em 30/10</td></tr>
+<tr><td>Mazzutti Photo (Italvino Mazzutti)</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos; encerrado pelo agente em 30/10</td></tr>
+<tr><td>Murilo Araújo</td><td>Pesquisa web (Google)</td><td>Casamento</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos; encerrado pelo agente em 30/10</td></tr>
+<tr><td>Picblu - Design de Albuns e Produtos Fotograficos</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos; encerrado pelo agente em 30/10</td></tr>
+<tr><td>Rizza Creative</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos; encerrado pelo agente em 30/10</td></tr>
+<tr><td>Roberto Chacur Studio Fotografico</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos; encerrado pelo agente em 30/10</td></tr>
+<tr><td>Santiago Producoes</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos; encerrado pelo agente em 30/10</td></tr>
+<tr><td>Studio A Fotografias</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos; encerrado pelo agente em 30/10</td></tr>
+<tr><td>Studio Nakazato Business</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos; encerrado pelo agente em 30/10</td></tr>
+<tr><td>Studioi9acao</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Perdido em 28/10 com só o 1º contato registrado</td></tr>
+<tr><td>Thiago Mesquita Fotografia</td><td>Base por CNAE</td><td>A confirmar</td><td><span class="tag p">Sem Retorno</span></td><td>Recebeu os 3 contatos; encerrado pelo agente em 30/10</td></tr>
+</tbody></table></div>
+<footer>"Respondeu" soma o ganho e quem deu um motivo de recusa, passou contato ou entrou como "parou de responder". As respostas em si não estão no Pipedrive, então a contagem se baseia em motivo de perda e anotações. Os 31 cards têm títulos diferentes (sem conferência de telefone repetido); Horários de Brasília; as notas manuais são da Wânia e as automáticas do agente (Henry Matsumoto).</footer>
+</main></body></html>
